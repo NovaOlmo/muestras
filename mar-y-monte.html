@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mar y Monte · Restaurante en Santa Ponça</title>
+<meta name="description" content="Chuletón, steak tartar cortado a cuchillo, croquetas caseras y tarta de queso. Abrimos todos los días menos el martes.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Libre+Franklin:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F5F2ED;--bg2:#E9E3D9;--ink:#181512;--text:#4A433C;--acc:#8E2F1C;--acc2:#D9A25B;--line:rgba(0,0,0,.12);--on:#F7F2EA;
+--on2:#FFFFFF;--hbg:rgba(24,21,18,.96);--hink:#F5F2ED;--fbg:#181512;--fon:#E9E3D9;
+--fh:'Playfair Display',Georgia,serif;--fb:'Libre Franklin',system-ui,sans-serif;--w:1200px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{background:var(--bg);color:var(--text);font:400 17px/1.65 var(--fb);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.e-con{padding:104px 32px}
+.e-con>.e-in{max-width:var(--w);margin:0 auto}
+.e-alt{background:var(--bg2)}
+.e-dark{background:var(--ink);color:var(--on)}
+.e-dark h2,.e-dark h3{color:var(--on)}
+h1,h2,h3{font-family:var(--fh);color:var(--ink);font-weight:600;line-height:1.08;letter-spacing:-.01em}
+h1{font-size:62px}
+h2{font-size:44px;margin-bottom:18px}
+h3{font-size:22px;margin-bottom:8px}
+.e-label{font:600 12.5px/1 var(--fb);letter-spacing:.16em;text-transform:uppercase;color:var(--acc);margin-bottom:16px;display:block}
+.e-dark .e-label{color:var(--acc2)}
+.e-text p+p{margin-top:14px}
+.e-lead{font-size:19px;max-width:560px}
+.hdr{position:sticky;top:0;z-index:50;background:var(--hbg);border-bottom:1px solid var(--line);backdrop-filter:blur(6px)}
+.hdr .e-in{max-width:var(--w);margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:76px;padding:0 32px;gap:28px}
+.logo{font:700 27px/1 var(--fh);color:var(--hink);text-decoration:none;letter-spacing:-.01em;white-space:nowrap}
+.logo small{display:block;font:600 10.5px/1 var(--fb);letter-spacing:.2em;text-transform:uppercase;opacity:.65;margin-top:5px}
+.nav{display:flex;gap:30px;font:500 15px/1 var(--fb)}
+.nav a{text-decoration:none;color:var(--hink);opacity:.85}
+.nav a:hover{opacity:1;color:var(--acc)}
+.hdr-r{display:flex;align-items:center;gap:18px}
+.lang{font:600 12px/1 var(--fb);letter-spacing:.12em;color:var(--hink);opacity:.6;white-space:nowrap}
+.e-btn{display:inline-flex;align-items:center;gap:9px;padding:15px 26px;font:600 15px/1 var(--fb);text-decoration:none;border-radius:0;border:2px solid var(--acc);transition:.2s;white-space:nowrap}
+.e-btn--solid{background:var(--acc);color:var(--on2)}
+.e-btn--solid:hover{filter:brightness(1.08)}
+.e-btn--line{color:var(--ink);border-color:var(--ink)}
+.e-btn--light{background:#fff;color:#111;border-color:#fff}
+.e-btn--ghost{color:#fff;border-color:rgba(255,255,255,.8)}
+.e-btn--sm{padding:11px 18px;font-size:14px}
+.bico{width:18px;height:18px;fill:currentColor}
+.btns{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}
+.hero{position:relative;color:#fff}
+.hero--full{min-height:640px;display:flex;align-items:flex-end}
+.hero--full .bg{position:absolute;inset:0;background-size:cover;background-position:center}
+.hero--full .bg:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.62) 0%,rgba(0,0,0,.25) 65%,rgba(0,0,0,.1))}
+.hero--full .e-in{position:relative;width:100%;padding:120px 0 96px}
+.hero--full h1{color:#fff;max-width:720px}
+.hero--full .e-lead{color:rgba(255,255,255,.9);margin-top:20px}
+.hero--full .e-label{color:var(--acc2)}
+.hero--split{color:var(--text);background:var(--bg)}
+.hero--split .e-in{display:grid;grid-template-columns:1fr 1.05fr;gap:64px;align-items:center;padding:72px 0 88px}
+.hero--split .e-lead{margin-top:20px}
+.hero--split .pic{height:560px;border-radius:0;overflow:hidden}
+.hero--split .pic img{width:100%;height:100%;object-fit:cover}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;margin-top:34px;font:500 14.5px/1.3 var(--fb);color:var(--text)}
+.hero--full .hero-badge{color:rgba(255,255,255,.88)}
+.hero-badge .ico{width:18px;height:18px;fill:var(--acc2)}
+.strip{background:var(--bg2);border-bottom:1px solid var(--line)}
+.strip ul{list-style:none;max-width:var(--w);margin:0 auto;display:flex;justify-content:space-between;gap:24px;padding:24px 32px}
+.strip li{display:flex;align-items:center;gap:12px;font-size:15.5px;color:var(--ink)}
+.ico{width:20px;height:20px;fill:var(--acc);flex:none}
+.row{display:grid;gap:64px;align-items:center}
+.row--2{grid-template-columns:1fr 1fr}
+.e-img{border-radius:0;overflow:hidden}
+.e-img img{width:100%;height:100%;object-fit:cover}
+.stack{position:relative;height:520px}
+.stack .a{position:absolute;left:0;top:0;width:72%;height:82%}
+.stack .b{position:absolute;right:0;bottom:0;width:48%;height:52%;border:8px solid var(--bg)}
+.e-ph{border:1.5px dashed var(--acc);background:color-mix(in srgb,var(--acc) 7%,transparent);color:var(--acc);padding:18px 20px;font-size:15px;border-radius:4px;margin-top:22px}
+.e-dark .e-ph{color:var(--acc2);border-color:var(--acc2)}
+.head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;margin-bottom:40px}
+.head p{max-width:460px}
+.cards{display:grid;grid-template-columns:repeat(var(--cols,4),1fr);gap:26px}
+.card .e-img{height:280px;margin-bottom:18px}
+.card p{font-size:15.5px}
+.ibox{padding:30px 28px;border:1px solid var(--line);border-radius:0;background:var(--bg)}
+.ibox .ico{width:34px;height:34px;margin-bottom:18px}
+.ibox p{font-size:15.5px}
+.price{display:block;margin-top:14px;font:600 14px/1 var(--fb);color:var(--acc)}
+.gal{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:220px;gap:10px}
+.gal .e-img{border-radius:0}
+.gal .w2{grid-column:span 2}.gal .h2{grid-row:span 2}
+.quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.quote{padding:32px 30px;border:1px solid rgba(255,255,255,.14);border-radius:0}
+.e-alt .quote{border-color:var(--line);background:var(--bg)}
+.stars{display:flex;gap:3px;margin-bottom:18px}
+.stars .ico{width:16px;height:16px;fill:var(--acc2)}
+.quote p{font-size:16px}
+.quote cite{display:block;margin-top:20px;font:600 13px/1 var(--fb);font-style:normal;letter-spacing:.1em;text-transform:uppercase;opacity:.7}
+.band{background:var(--acc);color:var(--on2)}
+.band .e-in{display:flex;align-items:center;justify-content:space-between;gap:40px}
+.band h2{color:var(--on2);margin:0;font-size:34px}
+.hours{list-style:none;margin-top:8px}
+.hours li{display:flex;justify-content:space-between;padding:11px 0;border-bottom:1px dotted var(--line);font-size:16px}
+.hours li span:first-child{color:var(--ink);font-weight:500}
+.hours li.off span:last-child{opacity:.6}
+.ilist{list-style:none;margin-top:26px}
+.ilist li{display:flex;gap:12px;align-items:flex-start;padding:7px 0}
+.map{height:460px;border-radius:0;overflow:hidden;border:1px solid var(--line)}
+.map iframe{width:100%;height:100%;border:0}
+.ftr{background:var(--fbg);color:var(--fon);padding:64px 32px 34px}
+.ftr .e-in{max-width:var(--w);margin:0 auto}
+.ftr .cols{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:48px}
+.ftr .logo{color:var(--fon)}
+.ftr h4{font:600 12px/1 var(--fb);letter-spacing:.16em;text-transform:uppercase;margin-bottom:16px;color:var(--acc2)}
+.ftr p,.ftr li{font-size:15px;opacity:.85}
+.ftr ul{list-style:none}
+.ftr li{padding:4px 0}
+.ftr .bot{display:flex;justify-content:space-between;margin-top:48px;padding-top:22px;border-top:1px solid rgba(255,255,255,.14);font-size:13px;opacity:.7}
+.js .fx{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s ease}
+.js .fx.in{opacity:1;transform:none}
+.demo-tag{position:fixed;left:16px;bottom:16px;z-index:60;background:#111;color:#fff;font:500 12px/1 var(--fb);padding:9px 12px;border-radius:3px;opacity:.8}
+</style></head><body>
+<header class="hdr"><div class="e-in">
+<a class="logo" href="#">Mar y Monte<small>Restaurante · Santa Ponça</small></a>
+<nav class="nav"><a href="#casa">La casa</a><a href="#carta">Cocina</a><a href="#fotos">Fotos</a><a href="#contacto">Reservas</a></nav>
+<div class="hdr-r"><span class="lang">ES · EN · DE</span><a class="e-btn e-btn--solid e-btn--sm" href="https://wa.me/34627323596?text=Hola%2C%20quer%C3%ADa%20reservar%20mesa%20en%20Mar%20y%20Monte." target="_blank" rel="noopener"><svg class="bico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.1 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.3.1.2.1.7-.1 1.3z"/></svg><span>Reservar</span></a></div>
+</div></header>
+<section class="hero hero--split e-con"><div class="e-in"><div class="fx"><span class="e-label">Restaurante · Santa Ponça</span><h1>Carne a la brasa, producto del mar y pan recién hecho</h1><p class="e-lead">Chuletón, steak tartar cortado a cuchillo, croquetas caseras y tarta de queso. Abrimos todos los días menos el martes.</p><div class="btns"><a class="e-btn e-btn--solid" href="https://wa.me/34627323596?text=Hola%2C%20quer%C3%ADa%20reservar%20mesa%20en%20Mar%20y%20Monte." target="_blank" rel="noopener"><svg class="bico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.1 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.3.1.2.1.7-.1 1.3z"/></svg><span>Reservar mesa</span></a><a class="e-btn e-btn--line" href="#carta"><span>Ver la cocina</span></a></div><div class="hero-badge"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><span>4,6 en Google · 321 reseñas</span></div></div>
+<div class="pic fx"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RMDxM95XapTnfpDWgxm5F2Y9A06a6GRRV-7YWGUbw51Ns2GERssyqsPAeCJ8z7K7bLWD5vgornvs9N_2jHU3iqujfmj05BJAm1R8x6_oyHgxG2crL-SEWqweYdTmCenH5A2Pqt=w1600-h1100-k-no" alt="Mar y Monte Restaurant" style="object-position:center"></div></div></section>
+<div class="strip"><ul><li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><span>4,6 en Google · 321 reseñas</span></li><li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 10.4V6h-2v7.4l5 3 1-1.7z"/></svg><span>13:00 – 23:00 · martes cerrado</span></li><li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 00-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1112 6.5a2.5 2.5 0 010 5z"/></svg><span>Via Puig des Teix, 6, 07180 Santa Ponça</span></li></ul></div>
+<section class="e-con" id="casa"><div class="e-in row row--2">
+<div class="stack fx"><div class="e-img a"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TGI4kx7VrEfvH_kA7o0JBv9jWvyx7LBQfazbZcyvb2Is4Kk_kZkLu44iauEe9mibRDbMPl1ASiU8hr2hIXWp7-0k0Bn-9oDlyqqbWS7-VQPXSSln2GfS3Pcjd1VGVUUEeoEaTF=w1200-h900-k-no" alt=""></div><div class="e-img b"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SRTd4zSzbPbI4jsTYab7g4W-PwMIVpMYNlowYaRoSHFZxUb3ibygKfopyqcXTCO8yMu2aOI3jxTMdzRVgVhu3b_6Hwik5KsJF71IMejUpVc-bSsmwtzS-CO7CQlfxhZxGBvfIpuYHqQtgj=w800-h600-k-no" alt=""></div></div>
+<div class="fx"><span class="e-label">La casa</span><h2>Un sitio tranquilo para comer bien</h2><div class="e-text"><p>Lo primero que llega a la mesa es el pan recién hecho con alioli y aceitunas. Después, carne de calidad, producto del mar y medias raciones generosas.</p><p>Tenemos terraza y los perros son bienvenidos.</p></div><div class="e-ph"><strong>Aquí va texto</strong> · Vuestra historia: quién está detrás, de dónde viene el producto y qué carnes trabajáis.</div>
+<div class="btns"><a class="e-btn e-btn--line" href="#contacto"><span>Reservar mesa</span></a></div></div></div></section>
+<section class="e-con e-alt" id="carta"><div class="e-in">
+<div class="head fx"><div><span class="e-label">Cocina</span><h2>De la brasa y del mar</h2></div><p>Los platos que más nombran los clientes en sus reseñas.</p></div>
+<div class="cards" style="--cols:4"><div class="card fx"><div class="e-img"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RMDxM95XapTnfpDWgxm5F2Y9A06a6GRRV-7YWGUbw51Ns2GERssyqsPAeCJ8z7K7bLWD5vgornvs9N_2jHU3iqujfmj05BJAm1R8x6_oyHgxG2crL-SEWqweYdTmCenH5A2Pqt=w900-h700-k-no" alt="Chuletón"></div><h3>Chuletón</h3><p>A la brasa y al punto que pidas.</p></div><div class="card fx"><div class="e-img"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SbBNwHX_Grta90HYSrnd75Psfv4ACjQurgXY7-BVTj7uDhWMM8pccSaQGJC7EGiVcv6x8bt0yX_UEWKrTZLpbCKIxo8OJC4pFyi5pR6kdPlqS0WKDQN_viddrA3O0XPwI3hcnIuv4R1DY=w900-h700-k-no" alt="De la parrilla"></div><h3>De la parrilla</h3><p>Carnes de calidad, también wagyu mallorquín.</p></div><div class="card fx"><div class="e-img"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RqYvlVgEn-nZSGbOffMnlO6m-Xe16fxdhn7_wrCYqodZiy7URHAUo_iW5b_zB07rcmCdztcfQB-xTNJjC3JJjzpWiDnIIImFNRvM1zUAxoroenUAmupooX89MPGrr-b8kUOOuLA33g2GM=w900-h700-k-no" alt="Del mar"></div><h3>Del mar</h3><p>Pulpo con base de patata, navajas, almejas y croquetas de chipirones.</p></div><div class="card fx"><div class="e-img"><img src="https://lh3.googleusercontent.com/grass-cs/AABkmLdK05WINYHD0ApvApxqgaxCJgGo-Cemq3j0jXcpdG-70_CTWyDuSxeTANZaoSY5xHYFsJbn7uvcUc1dYUT8g33OJIaKAqlqNRCxLS8KceG2BrgVv73aGMrZ2RC4rGojjhMaVFR_=w900-h700-k-no" alt="Postres caseros"></div><h3>Postres caseros</h3><p>La tarta de queso recién hecha es la que más se repite.</p></div></div><div class="e-ph"><strong>Aquí va texto</strong> · La carta con precios, las carnes de temporada y las sugerencias fuera de carta.</div></div></section>
+<section class="e-con" id="fotos"><div class="e-in"><div class="head fx"><div><span class="e-label">Fotos</span><h2>Mar y Monte por dentro</h2></div></div>
+<div class="gal fx"><div class="e-img w2 h2"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SQaPTqiTpMVTPz7umdB1I6Xblom4OCqTZyqUqcUTTDHtUjKNluclmrI_oy_v5jBMy1Oprdred5mp3SR4zDkNkI0YN_jIT1-9hBCV4W0oL2DX2u0rXpNlCJEuxr5KN-CWQ2v4ap=w1000-h800-k-no" alt="" loading="lazy"></div><div class="e-img "><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SbBNwHX_Grta90HYSrnd75Psfv4ACjQurgXY7-BVTj7uDhWMM8pccSaQGJC7EGiVcv6x8bt0yX_UEWKrTZLpbCKIxo8OJC4pFyi5pR6kdPlqS0WKDQN_viddrA3O0XPwI3hcnIuv4R1DY=w1000-h800-k-no" alt="" loading="lazy"></div><div class="e-img "><img src="https://lh3.googleusercontent.com/grass-cs/AABkmLeHANxAMQn8PCHOWhMYqWs9Wq9nuvAsiVbYlik-z36Oo6NO66DGc5Yzqud-dURJ6z85TpOSQvZFQCOrhShRfFBg-RudaxdBmB-_snarRU3fNu3G6gU38zEmGh-R4eSryxQeCWRkxe6pV1M=w1000-h800-k-no" alt="" loading="lazy"></div><div class="e-img "><img src="https://lh3.googleusercontent.com/grass-cs/AABkmLdv7lhRU-IDGqHroBrhMRZy5mPqfa36SLJn_y9QUeJHblk6tgUZYabIpwQbXwVebuzgVqMAuaeEpQMl2e7zi5rlhWMj4Z7nGKoxRgeEM7ViiMo9owFfoeVaFby9t6UixkuU81k9=w1000-h800-k-no" alt="" loading="lazy"></div><div class="e-img "><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RqYvlVgEn-nZSGbOffMnlO6m-Xe16fxdhn7_wrCYqodZiy7URHAUo_iW5b_zB07rcmCdztcfQB-xTNJjC3JJjzpWiDnIIImFNRvM1zUAxoroenUAmupooX89MPGrr-b8kUOOuLA33g2GM=w1000-h800-k-no" alt="" loading="lazy"></div></div></div></section>
+<section class="e-con e-dark" id="opiniones"><div class="e-in">
+<div class="head fx"><div><span class="e-label">Reseñas en Google</span><h2>4,6 sobre 5 con 321 opiniones</h2></div><p>Lo que dicen quienes ya han venido.</p></div>
+<div class="quotes"><div class="quote fx"><div class="stars"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg></div><p>“Calidad impresionante de todo lo que hemos comido - croquetas, queso, la carne y los postres. Servicio muy competente e amable. Volveremos seguro, debe ser el mejor restaurante de Santa Ponsa.”</p><cite>Tom E.</cite></div><div class="quote fx"><div class="stars"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg></div><p>“Hemos comido de lujo! Todo buenísimo, el queso muy muy bueno. Las medias raciones con bastante cantidad y buen precio. El Wagyu mallorquín sabor muy intenso y Carme tersa, no dura. Merece la pena probarlo. La tarta de queso muy muy buena también.”</p><cite>Cristina L.</cite></div><div class="quote fx"><div class="stars"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg></div><p>“Fuimos a comer a Marymonte y la experiencia fue de 10. La comida estaba muy buena, con productos de calidad y todo muy bien preparado. Pero, sin duda, lo mejor fue la atención. Queremos destacar especialmente a Fede y Ángel, que nos atendieron con muchísima…”</p><cite>Carolina M.</cite></div></div></div></section>
+<section class="e-con band" style="padding-top:64px;padding-bottom:64px"><div class="e-in"><h2>Reserva tu mesa por WhatsApp y te la guardamos.</h2><a class="e-btn e-btn--light" href="https://wa.me/34627323596?text=Hola%2C%20quer%C3%ADa%20reservar%20mesa%20en%20Mar%20y%20Monte." target="_blank" rel="noopener"><svg class="bico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.1 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.3.1.2.1.7-.1 1.3z"/></svg><span>Escribir por WhatsApp</span></a></div></section>
+<section class="e-con" id="contacto"><div class="e-in row row--2" style="align-items:start">
+<div class="fx"><span class="e-label">Dónde estamos</span><h2>Via Puig des Teix, 6 · Santa Ponça</h2>
+<h3 style="margin-top:26px;font-size:20px">Horario</h3><ul class="hours"><li class=""><span>Lunes</span><span>13:00 – 23:00</span></li><li class="off"><span>Martes</span><span>Cerrado</span></li><li class=""><span>Miércoles</span><span>13:00 – 23:00</span></li><li class=""><span>Jueves</span><span>13:00 – 23:00</span></li><li class=""><span>Viernes</span><span>13:00 – 23:00</span></li><li class=""><span>Sábado</span><span>13:00 – 23:00</span></li><li class=""><span>Domingo</span><span>13:00 – 23:00</span></li></ul>
+<ul class="ilist"><li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 00-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1112 6.5a2.5 2.5 0 010 5z"/></svg><span>Via Puig des Teix, 6, 07180 Santa Ponça</span></li><li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 013 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg><span>627 32 35 96</span></li></ul>
+<div class="btns"><a class="e-btn e-btn--solid" href="https://wa.me/34627323596?text=Hola%2C%20quer%C3%ADa%20reservar%20mesa%20en%20Mar%20y%20Monte." target="_blank" rel="noopener"><svg class="bico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.1 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.3.1.2.1.7-.1 1.3z"/></svg><span>Reservar por WhatsApp</span></a><a class="e-btn e-btn--line" href="https://www.google.com/maps/search/?api=1&amp;query=Mar%20y%20Monte%20Restaurant%2C%20Via%20Puig%20des%20Teix%2C%206%2C%2007180%20Santa%20Pon%C3%A7a%2C%20Illes%20Balears" target="_blank" rel="noopener"><span>Cómo llegar</span></a></div></div>
+<div class="map fx"><iframe loading="lazy" src="https://maps.google.com/maps?q=Mar%20y%20Monte%20Restaurant%2C%20Via%20Puig%20des%20Teix%2C%206%2C%2007180%20Santa%20Pon%C3%A7a%2C%20Illes%20Balears&z=16&output=embed" title="Mapa"></iframe></div></div></section>
+<footer class="ftr"><div class="e-in"><div class="cols">
+<div><a class="logo" href="#">Mar y Monte<small>Restaurante · Santa Ponça</small></a><p style="margin-top:18px;max-width:360px">Restaurante en Santa Ponça. Brasa, producto del mar y cocina casera.</p></div>
+<div><h4>Horario</h4><ul><li>Lunes, miércoles a domingo</li><li>13:00 – 23:00</li><li>Martes cerrado</li></ul></div>
+<div><h4>Contacto</h4><ul><li>Via Puig des Teix, 6, 07180 Santa Ponça</li><li>627 32 35 96</li><li><a href="https://wa.me/34627323596?text=Hola%2C%20quer%C3%ADa%20reservar%20mesa%20en%20Mar%20y%20Monte." target="_blank" rel="noopener">WhatsApp</a></li></ul></div>
+</div><div class="bot"><span>© 2026 Mar y Monte</span><span>Diseño web: NovaOlmo</span></div></div></footer>
+<div class="demo-tag">Web de muestra · NovaOlmo</div>
+<script>
+(function(){document.documentElement.classList.add('js');var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.12});document.querySelectorAll('.fx').forEach(function(el){io.observe(el)})})();
+</script>
+</body></html>

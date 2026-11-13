@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>La Vermutería · Cala d&#x27;Or</title>
+<meta name="description" content="Un rincón apartado del jaleo, a un paso del centro de Cala d&#x27;Or. Tapas hechas al momento, cócteles y precios justos.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:wght@400&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F8F0E6;--bg2:#EEDFCD;--ink:#2B1B16;--text:#584741;--acc:#9B2C2C;--acc2:#E7B65C;--line:rgba(0,0,0,.12);--on:#F7F2EA;
+--on2:#FFFFFF;--hbg:rgba(248,240,230,.95);--hink:#2B1B16;--fbg:#2B1B16;--fon:#EEDFCD;
+--fh:'DM Serif Display',Georgia,serif;--fb:'Nunito Sans',system-ui,sans-serif;--w:1200px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{background:var(--bg);color:var(--text);font:400 17px/1.65 var(--fb);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.e-con{padding:104px 32px}
+.e-con>.e-in{max-width:var(--w);margin:0 auto}
+.e-alt{background:var(--bg2)}
+.e-dark{background:var(--ink);color:var(--on)}
+.e-dark h2,.e-dark h3{color:var(--on)}
+h1,h2,h3{font-family:var(--fh);color:var(--ink);font-weight:400;line-height:1.08;letter-spacing:0}
+h1{font-size:68px}
+h2{font-size:48px;margin-bottom:18px}
+h3{font-size:22px;margin-bottom:8px}
+.e-label{font:600 12.5px/1 var(--fb);letter-spacing:.16em;text-transform:uppercase;color:var(--acc);margin-bottom:16px;display:block}
+.e-dark .e-label{color:var(--acc2)}
+.e-text p+p{margin-top:14px}
+.e-lead{font-size:19px;max-width:560px}
+.hdr{position:sticky;top:0;z-index:50;background:var(--hbg);border-bottom:1px solid var(--line);backdrop-filter:blur(6px)}
+.hdr .e-in{max-width:var(--w);margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:76px;padding:0 32px;gap:28px}
+.logo{font:400 29px/1 var(--fh);color:var(--hink);text-decoration:none;letter-spacing:0;white-space:nowrap}
+.logo small{display:block;font:600 10.5px/1 var(--fb);letter-spacing:.2em;text-transform:uppercase;opacity:.65;margin-top:5px}
+.nav{display:flex;gap:30px;font:500 15px/1 var(--fb)}
+.nav a{text-decoration:none;color:var(--hink);opacity:.85}
+.nav a:hover{opacity:1;color:var(--acc)}
+.hdr-r{display:flex;align-items:center;gap:18px}
+.lang{font:600 12px/1 var(--fb);letter-spacing:.12em;color:var(--hink);opacity:.6;white-space:nowrap}
+.e-btn{display:inline-flex;align-items:center;gap:9px;padding:15px 26px;font:600 15px/1 var(--fb);text-decoration:none;border-radius:40px;border:2px solid var(--acc);transition:.2s;white-space:nowrap}
+.e-btn--solid{background:var(--acc);color:var(--on2)}
+.e-btn--solid:hover{filter:brightness(1.08)}
+.e-btn--line{color:var(--ink);border-color:var(--ink)}
+.e-btn--light{background:#fff;color:#111;border-color:#fff}
+.e-btn--ghost{color:#fff;border-color:rgba(255,255,255,.8)}
+.e-btn--sm{padding:11px 18px;font-size:14px}
+.bico{width:18px;height:18px;fill:currentColor}
+.btns{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}
+.hero{position:relative;color:#fff}
+.hero--full{min-height:640px;display:flex;align-items:flex-end}
+.hero--full .bg{position:absolute;inset:0;background-size:cover;background-position:center}
+.hero--full .bg:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.62) 0%,rgba(0,0,0,.25) 65%,rgba(0,0,0,.1))}
+.hero--full .e-in{position:relative;width:100%;padding:120px 0 96px}
+.hero--full h1{color:#fff;max-width:720px}
+.hero--full .e-lead{color:rgba(255,255,255,.9);margin-top:20px}
+.hero--full .e-label{color:var(--acc2)}
+.hero--split{color:var(--text);background:var(--bg)}
+.hero--split .e-in{display:grid;grid-template-columns:1fr 1.05fr;gap:64px;align-items:center;padding:72px 0 88px}
+.hero--split .e-lead{margin-top:20px}
+.hero--split .pic{height:560px;border-radius:6px;overflow:hidden}
+.hero--split .pic img{width:100%;height:100%;object-fit:cover}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;margin-top:34px;font:500 14.5px/1.3 var(--fb);color:var(--text)}
+.hero--full .hero-badge{color:rgba(255,255,255,.88)}
+.hero-badge .ico{width:18px;height:18px;fill:var(--acc2)}
+.strip{background:var(--bg2);border-bottom:1px solid var(--line)}
+.strip ul{list-style:none;max-width:var(--w);margin:0 auto;display:flex;justify-content:space-between;gap:24px;padding:24px 32px}
+.strip li{display:flex;align-items:center;gap:12px;font-size:15.5px;color:var(--ink)}
+.ico{width:20px;height:20px;fill:var(--acc);flex:none}
+.row{display:grid;gap:64px;align-items:center}
+.row--2{grid-template-columns:1fr 1fr}
+.e-img{border-radius:6px;overflow:hidden}
+.e-img img{width:100%;height:100%;object-fit:cover}
+.stack{position:relative;height:520px}
+.stack .a{position:absolute;left:0;top:0;width:72%;height:82%}
+.stack .b{position:absolute;right:0;bottom:0;width:48%;height:52%;border:8px solid var(--bg)}
+.e-ph{border:1.5px dashed var(--acc);background:color-mix(in srgb,var(--acc) 7%,transparent);color:var(--acc);padding:18px 20px;font-size:15px;border-radius:4px;margin-top:22px}
+.e-dark .e-ph{color:var(--acc2);border-color:var(--acc2)}
+.head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;margin-bottom:40px}
+.head p{max-width:460px}
+.cards{display:grid;grid-template-columns:repeat(var(--cols,4),1fr);gap:26px}
+.card .e-img{height:280px;margin-bottom:18px}
+.card p{font-size:15.5px}
+.ibox{padding:30px 28px;border:1px solid var(--line);border-radius:6px;background:var(--bg)}
+.ibox .ico{width:34px;height:34px;margin-bottom:18px}
+.ibox p{font-size:15.5px}
+.price{display:block;margin-top:14px;font:600 14px/1 var(--fb);color:var(--acc)}
+.gal{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:220px;gap:10px}
+.gal .e-img{border-radius:40px}
+.gal .w2{grid-column:span 2}.gal .h2{grid-row:span 2}
+.quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.quote{padding:32px 30px;border:1px solid rgba(255,255,255,.14);border-radius:6px}
+.e-alt .quote{border-color:var(--line);background:var(--bg)}
+.stars{display:flex;gap:3px;margin-bottom:18px}
+.stars .ico{width:16px;height:16px;fill:var(--acc2)}
+.quote p{font-size:16px}
+.quote cite{display:block;margin-top:20px;font:600 13px/1 var(--fb);font-style:normal;letter-spacing:.1em;text-transform:uppercase;opacity:.7}
+.band{background:var(--acc);color:var(--on2)}
+.band .e-in{display:flex;align-items:center;justify-content:space-between;gap:40px}
+.band h2{color:var(--on2);margin:0;font-size:34px}
+.hours{list-style:none;margin-top:8px}
+.hours li{display:flex;justify-content:space-between;padding:11px 0;border-bottom:1px dotted var(--line);font-size:16px}
+.hours li span:first-child{color:var(--ink);font-weight:500}
+.hours li.off span:last-child{opacity:.6}
+.ilist{list-style:none;margin-top:26px}
+.ilist li{display:flex;gap:12px;align-items:flex-start;padding:7px 0}
+.map{height:460px;border-radius:6px;overflow:hidden;border:1px solid var(--line)}
+.map iframe{width:100%;height:100%;border:0}
+.ftr{background:var(--fbg);color:var(--fon);padding:64px 32px 34px}
+.ftr .e-in{max-width:var(--w);margin:0 auto}
+.ftr .cols{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:48px}
+.ftr .logo{color:var(--fon)}
+.ftr h4{font:600 12px/1 var(--fb);letter-spacing:.16em;text-transform:uppercase;margin-bottom:16px;color:var(--acc2)}
+.ftr p,.ftr li{font-size:15px;opacity:.85}
+.ftr ul{list-style:none}
+.ftr li{padding:4px 0}
+.ftr .bot{display:flex;justify-content:space-between;margin-top:48px;padding-top:22px;border-top:1px solid rgba(255,255,255,.14);font-size:13px;opacity:.7}
+.js .fx{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s ease}
+.js .fx.in{opacity:1;transform:none}
+.demo-tag{position:fixed;left:16px;bottom:16px;z-index:60;background:#111;color:#fff;font:500 12px/1 var(--fb);padding:9px 12px;border-radius:3px;opacity:.8}
+</style></head><body>
+<header class="hdr"><div class="e-in">
+<a class="logo" href="#">La Vermutería<small>Tapas y vermut · Cala d&#x27;Or</small></a>
+<nav class="nav"><a href="#casa">La casa</a><a href="#carta">Tapas</a><a href="#fotos">Fotos</a><a href="#contacto">Dónde estamos</a></nav>
+<div class="hdr-r"><span class="lang">ES · EN · DE</span><a class="e-btn e-btn--solid e-btn--sm" href="https://wa.me/34696555008?text=Hola%2C%20quer%C3%ADa%20reservar%20mesa%20en%20La%20Vermuter%C3%ADa." target="_blank" rel="noopener"><svg class="bico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.1 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.3.1.2.1.7-.1 1.3z"/></svg><span>Reservar</span></a></div>
+</div></header>
+<section class="hero hero--full e-con"><div class="bg" style="background-image:url('https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RAgJ6wyOVQz88V7ewqrJHMEurghxiPy9Vgkx3DIajEKoNNQA1axNH90_lPQRc4h8AX6UZ51Nol1CwAp7UhBpxYhZ91iK73DoI09hodPT2XxhYlv9QbpPYHpo0jyu-hVQ4EQaXv-E4odbYJ=w2000-h1300-k-no');background-position:center 60%"></div>
+<div class="e-in"><span class="e-label">Tapas y vermut · Cala d&#x27;Or</span><h1>Vermut, tapas caseras y un patio tranquilo</h1><p class="e-lead">Un rincón apartado del jaleo, a un paso del centro de Cala d&#x27;Or. Tapas hechas al momento, cócteles y precios justos.</p><div class="btns"><a class="e-btn e-btn--solid" href="https://wa.me/34696555008?text=Hola%2C%20quer%C3%ADa%20reservar%20mesa%20en%20La%20Vermuter%C3%ADa." target="_blank" rel="noopener"><svg class="bico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.1 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.3.1.2.1.7-.1 1.3z"/></svg><span>Reservar por WhatsApp</span></a><a class="e-btn e-btn--ghost" href="#carta"><span>Ver las tapas</span></a></div><div class="hero-badge"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><span>4,7 en Google · 309 reseñas</span></div></div></section>
+<div class="strip"><ul><li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><span>4,7 en Google · 309 reseñas</span></li><li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 10.4V6h-2v7.4l5 3 1-1.7z"/></svg><span>Horario de temporada</span></li><li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 00-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1112 6.5a2.5 2.5 0 010 5z"/></svg><span>Carrer d&#x27;en Perico Pomar, 13, 07660 Cala d&#x27;Or</span></li></ul></div>
+<section class="e-con" id="casa"><div class="e-in row row--2">
+<div class="stack fx"><div class="e-img a"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Qpw0ZxBCE_KPMEIMN1iwoZX9EgWqsr-c77c6ICaS8vp8mZyKlSNEqjq1cdVD8NLjaaiEHE84LbRw1KBRvNrIuBwzWlTFA6WdL_ozYuIVOu-EspGo8K725GwgVyWoXNXEuIZ0Y=w1200-h900-k-no" alt=""></div><div class="e-img b"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RtU3xOra-xMacQy7cujhAVGzPbr0AmBrPV82hWh_nZiJJHocgPUAV4DsNQ8QhI-DzFStB3OeKJm2J_ySl3ipaxaEDuz_j0mp0-odyDqSCoCzliUDuLaGDW6qjWXVpgw-3i2Xp05NYmUiaB=w800-h600-k-no" alt=""></div></div>
+<div class="fx"><span class="e-label">La casa</span><h2>Sin lujos, con calidad y buen trato</h2><div class="e-text"><p>Aquí no hay ambientes recargados: un patio agradable, música tranquila y cocina casera de calidad, muy por encima de lo que se espera en zona turística.</p><p>Los perros son bienvenidos.</p></div><div class="e-ph"><strong>Aquí va texto</strong> · Vuestra historia: quién está detrás de La Vermutería y desde cuándo.</div>
+<div class="btns"><a class="e-btn e-btn--line" href="#carta"><span>Ver las tapas</span></a></div></div></div></section>
+<section class="e-con e-alt" id="carta"><div class="e-in">
+<div class="head fx"><div><span class="e-label">Tapas</span><h2>Lo que no puedes dejar de probar</h2></div><p>Lo que más se repite en las reseñas de Google.</p></div>
+<div class="cards" style="--cols:4"><div class="card fx"><div class="e-img"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RjhDLkt0-NEejhp4jIF8cCzgIGwdQNwH64eLbzgIn_mE4fZhVmt-Oa_M6oPbvH1QUGB0Y5axaH4NWdtv8dflx9TDTxjivfTwaJ6oJe1Sz1L_4OZSmEP8ZSrsYQFxhhEJj9tOIesXspsHh6=w900-h700-k-no" alt="Bravas"></div><h3>Bravas</h3><p>De las de siempre, con sus dos salsas.</p></div><div class="card fx"><div class="e-img"><img src="https://lh3.googleusercontent.com/grass-cs/AABkmLeEMX3yrAzVGof0Hfd0P1t2nKyUFCBr2doubc7yzH9KJ1r3rCmGEi3InWfxaDrn77EhZbDmRdccYQPyZxycWLbzWvBHhE7vDv3LakUwM8G7X_UTTtUDiu0BfbdBNgMdnvQQGjKSVw=w900-h700-k-no" alt="Pan con tomate y alioli"></div><h3>Pan con tomate y alioli</h3><p>Para empezar mientras llega el vermut.</p></div><div class="card fx"><div class="e-img"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S-iShglqKU5ct_m-gBaAGQCWdr7gIcSrYQadxtMT3b_Hte9ysfO3P5CUyuHp95IRwYTHVIPrftSIzBsznShPur-r3Muj711_yO0hrXR0SoAeQ4HzmbWdwOlErJDCli5MuzY1qrmEUgcn8h=w900-h700-k-no" alt="La hamburguesa"></div><h3>La hamburguesa</h3><p>La que recomienda el camarero, y no falla.</p></div><div class="card fx"><div class="e-img"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RZebn9DqGiNQ5RKFAmvD2f2t-ToP0M0IvrEdQ113TWqdxpwLXBCUTC-h_YY7uBK8V_wAqL5AfLc8XDnsARrsouEfa3xDBvHqaLKyL4J5wLNK97QioCkDIQRE9nnGxaNWOZYsA7Wg=w900-h700-k-no" alt="Para compartir"></div><h3>Para compartir</h3><p>Bacalao con alioli, tartar de salmón y tapas al centro.</p></div></div><div class="e-ph"><strong>Aquí va texto</strong> · La carta con precios: tapas, raciones, vermuts y cócteles.</div></div></section>
+<section class="e-con" id="fotos"><div class="e-in"><div class="head fx"><div><span class="e-label">Fotos</span><h2>El patio y la cocina</h2></div></div>
+<div class="gal fx"><div class="e-img w2 h2"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Qpw0ZxBCE_KPMEIMN1iwoZX9EgWqsr-c77c6ICaS8vp8mZyKlSNEqjq1cdVD8NLjaaiEHE84LbRw1KBRvNrIuBwzWlTFA6WdL_ozYuIVOu-EspGo8K725GwgVyWoXNXEuIZ0Y=w1000-h800-k-no" alt="" loading="lazy"></div><div class="e-img "><img src="https://lh3.googleusercontent.com/grass-cs/AABkmLdAuBmHZSEuZzBsYR4ZL8A2crSpVafmAT1udzufXNUVtJt9deRH7wfgbyz-molwYLNH7yxLOmY1Mr9j3Lz-oo6VjX4UALlkr5m8hC7a5rs3mjinO4aaYkJwtvwFaDtS9MTaIjYpfxvDxB2b=w1000-h800-k-no" alt="" loading="lazy"></div><div class="e-img "><img src="https://lh3.googleusercontent.com/grass-cs/AABkmLcCTFz4zF9IL2xfzajY-TEoUeUJN_K6dGXFUjq8T0aJ4IGlt3Z90irIUW_vYNmbhysaSBvpfVKEPes6k4exBvDNCjXLEbxb4PfmvlHuyr_oKWxbkFz5L3Eg9jJ11WmaAA661UPoqI1Zljo=w1000-h800-k-no" alt="" loading="lazy"></div><div class="e-img "><img src="https://lh3.googleusercontent.com/grass-cs/AABkmLcOKee7aN8teu1IrqkOmYnKbb82LXKn9CmZa0olrJip5w3IZujaLR2m9VlgUlLn5PxC4jmY340p1uxId2RJAYTzNom7678ukj6ZLolACvgOMebGm0vvhXrBT7uIighta1o9gayA=w1000-h800-k-no" alt="" loading="lazy"></div><div class="e-img "><img src="https://lh3.googleusercontent.com/grass-cs/AABkmLdKMsWqJBDncmonzMhx3OvzQcMrKQGKPUbqIxbrDYPCW7pMVlejd8blXkCENvgHVsHsixt87Cmqmgh5qakfTcG4G8WQfXkliHTRwfhryRDIwqfnnyZulPzyIV-4SdHfBGAHOids_DuyDiw=w1000-h800-k-no" alt="" loading="lazy"></div></div></div></section>
+<section class="e-con e-dark" id="opiniones"><div class="e-in">
+<div class="head fx"><div><span class="e-label">Reseñas en Google</span><h2>4,7 sobre 5 con 309 opiniones</h2></div><p>Lo que dicen quienes ya han venido.</p></div>
+<div class="quotes"><div class="quote fx"><div class="stars"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg></div><p>“Estupendo sitio para parar a picar algo, todo muy rico, el vermut riquísimo y las tapas muy ricas y bien preparadas. Totalmente recomendable. El camarero muy simpático y un buen servicio. Un diez👍🏼👍🏼👍🏼”</p><cite>Maite P.</cite></div><div class="quote fx"><div class="stars"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg></div><p>“Lugar apartado de la multitud, comida de muy buena calidad, y personal super amable A destacar el tartar de Salmón y el bacalao , suuuuuper bueno Sin duda repetiremos”</p><cite>Marc C.</cite></div><div class="quote fx"><div class="stars"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg></div><p>“¡Una experiencia increíble! La comida, de 10. De momento, no hemos encontrado nada parecido en Cala d’Or. Todo estaba excelente, tanto el servicio como la atención estuvieron a la altura. Sin duda, un sitio para repetir y recomendar.”</p><cite>Remi</cite></div></div></div></section>
+<section class="e-con band" style="padding-top:64px;padding-bottom:64px"><div class="e-in"><h2>Reserva mesa en el patio por WhatsApp.</h2><a class="e-btn e-btn--light" href="https://wa.me/34696555008?text=Hola%2C%20quer%C3%ADa%20reservar%20mesa%20en%20La%20Vermuter%C3%ADa." target="_blank" rel="noopener"><svg class="bico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.1 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.3.1.2.1.7-.1 1.3z"/></svg><span>Escribir por WhatsApp</span></a></div></section>
+<section class="e-con" id="contacto"><div class="e-in row row--2" style="align-items:start">
+<div class="fx"><span class="e-label">Dónde estamos</span><h2>Carrer d&#x27;en Perico Pomar, 13 · Cala d&#x27;Or</h2>
+<h3 style="margin-top:26px;font-size:20px">Horario</h3><div class="e-ph"><strong>Aquí va texto</strong> · Horario de temporada y fecha de reapertura</div>
+<ul class="ilist"><li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 00-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1112 6.5a2.5 2.5 0 010 5z"/></svg><span>Carrer d&#x27;en Perico Pomar, 13, 07660 Cala d&#x27;Or</span></li><li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 013 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg><span>696 55 50 08</span></li></ul>
+<div class="btns"><a class="e-btn e-btn--solid" href="https://wa.me/34696555008?text=Hola%2C%20quer%C3%ADa%20reservar%20mesa%20en%20La%20Vermuter%C3%ADa." target="_blank" rel="noopener"><svg class="bico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.1 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.3.1.2.1.7-.1 1.3z"/></svg><span>Reservar por WhatsApp</span></a><a class="e-btn e-btn--line" href="https://www.google.com/maps/search/?api=1&amp;query=La%20Vermuter%C3%ADa%20cala%20dor%2C%20Carrer%20d%27en%20Perico%20Pomar%2C%2013%2C%2007660%20Cala%20d%27Or%2C%20Illes%20Balears" target="_blank" rel="noopener"><span>Cómo llegar</span></a></div></div>
+<div class="map fx"><iframe loading="lazy" src="https://maps.google.com/maps?q=La%20Vermuter%C3%ADa%20cala%20dor%2C%20Carrer%20d%27en%20Perico%20Pomar%2C%2013%2C%2007660%20Cala%20d%27Or%2C%20Illes%20Balears&z=16&output=embed" title="Mapa"></iframe></div></div></section>
+<footer class="ftr"><div class="e-in"><div class="cols">
+<div><a class="logo" href="#">La Vermutería<small>Tapas y vermut · Cala d&#x27;Or</small></a><p style="margin-top:18px;max-width:360px">Tapas caseras, vermut y cócteles en Cala d&#x27;Or.</p></div>
+<div><h4>Horario</h4><ul><li>Horario de temporada</li><li>Aquí va el horario</li></ul></div>
+<div><h4>Contacto</h4><ul><li>Carrer d&#x27;en Perico Pomar, 13, 07660 Cala d&#x27;Or</li><li>696 55 50 08</li><li><a href="https://wa.me/34696555008?text=Hola%2C%20quer%C3%ADa%20reservar%20mesa%20en%20La%20Vermuter%C3%ADa." target="_blank" rel="noopener">WhatsApp</a></li></ul></div>
+</div><div class="bot"><span>© 2026 La Vermutería</span><span>Diseño web: NovaOlmo</span></div></div></footer>
+<div class="demo-tag">Web de muestra · NovaOlmo</div>
+<script>
+(function(){document.documentElement.classList.add('js');var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.12});document.querySelectorAll('.fx').forEach(function(el){io.observe(el)})})();
+</script>
+</body></html>

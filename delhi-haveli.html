@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Delhi Haveli · Cocina india en Alcúdia</title>
+<meta name="description" content="Para comer aquí, para llevar o a domicilio. Abiertos todos los días de 12:00 a 23:30.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Karla:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#FBF6EE;--bg2:#F3E8D8;--ink:#2A1410;--text:#55433A;--acc:#B23A1E;--acc2:#E3A33B;--line:rgba(0,0,0,.12);--on:#F7F2EA;
+--on2:#FFFFFF;--hbg:rgba(251,246,238,.95);--hink:#2A1410;--fbg:#2A1410;--fon:#F3E8D8;
+--fh:'Cormorant Garamond',Georgia,serif;--fb:'Karla',system-ui,sans-serif;--w:1200px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{background:var(--bg);color:var(--text);font:400 17px/1.65 var(--fb);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.e-con{padding:104px 32px}
+.e-con>.e-in{max-width:var(--w);margin:0 auto}
+.e-alt{background:var(--bg2)}
+.e-dark{background:var(--ink);color:var(--on)}
+.e-dark h2,.e-dark h3{color:var(--on)}
+h1,h2,h3{font-family:var(--fh);color:var(--ink);font-weight:600;line-height:1.08;letter-spacing:-.01em}
+h1{font-size:70px}
+h2{font-size:50px;margin-bottom:18px}
+h3{font-size:25px;margin-bottom:8px}
+.e-label{font:600 12.5px/1 var(--fb);letter-spacing:.16em;text-transform:uppercase;color:var(--acc);margin-bottom:16px;display:block}
+.e-dark .e-label{color:var(--acc2)}
+.e-text p+p{margin-top:14px}
+.e-lead{font-size:19px;max-width:560px}
+.hdr{position:sticky;top:0;z-index:50;background:var(--hbg);border-bottom:1px solid var(--line);backdrop-filter:blur(6px)}
+.hdr .e-in{max-width:var(--w);margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:76px;padding:0 32px;gap:28px}
+.logo{font:700 30px/1 var(--fh);color:var(--hink);text-decoration:none;letter-spacing:-.01em;white-space:nowrap}
+.logo small{display:block;font:600 10.5px/1 var(--fb);letter-spacing:.2em;text-transform:uppercase;opacity:.65;margin-top:5px}
+.nav{display:flex;gap:30px;font:500 15px/1 var(--fb)}
+.nav a{text-decoration:none;color:var(--hink);opacity:.85}
+.nav a:hover{opacity:1;color:var(--acc)}
+.hdr-r{display:flex;align-items:center;gap:18px}
+.lang{font:600 12px/1 var(--fb);letter-spacing:.12em;color:var(--hink);opacity:.6;white-space:nowrap}
+.e-btn{display:inline-flex;align-items:center;gap:9px;padding:15px 26px;font:600 15px/1 var(--fb);text-decoration:none;border-radius:3px;border:2px solid var(--acc);transition:.2s;white-space:nowrap}
+.e-btn--solid{background:var(--acc);color:var(--on2)}
+.e-btn--solid:hover{filter:brightness(1.08)}
+.e-btn--line{color:var(--ink);border-color:var(--ink)}
+.e-btn--light{background:#fff;color:#111;border-color:#fff}
+.e-btn--ghost{color:#fff;border-color:rgba(255,255,255,.8)}
+.e-btn--sm{padding:11px 18px;font-size:14px}
+.bico{width:18px;height:18px;fill:currentColor}
+.btns{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}
+.hero{position:relative;color:#fff}
+.hero--full{min-height:640px;display:flex;align-items:flex-end}
+.hero--full .bg{position:absolute;inset:0;background-size:cover;background-position:center}
+.hero--full .bg:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.62) 0%,rgba(0,0,0,.25) 65%,rgba(0,0,0,.1))}
+.hero--full .e-in{position:relative;width:100%;padding:120px 0 96px}
+.hero--full h1{color:#fff;max-width:720px}
+.hero--full .e-lead{color:rgba(255,255,255,.9);margin-top:20px}
+.hero--full .e-label{color:var(--acc2)}
+.hero--split{color:var(--text);background:var(--bg)}
+.hero--split .e-in{display:grid;grid-template-columns:1fr 1.05fr;gap:64px;align-items:center;padding:72px 0 88px}
+.hero--split .e-lead{margin-top:20px}
+.hero--split .pic{height:560px;border-radius:4px;overflow:hidden}
+.hero--split .pic img{width:100%;height:100%;object-fit:cover}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;margin-top:34px;font:500 14.5px/1.3 var(--fb);color:var(--text)}
+.hero--full .hero-badge{color:rgba(255,255,255,.88)}
+.hero-badge .ico{width:18px;height:18px;fill:var(--acc2)}
+.strip{background:var(--bg2);border-bottom:1px solid var(--line)}
+.strip ul{list-style:none;max-width:var(--w);margin:0 auto;display:flex;justify-content:space-between;gap:24px;padding:24px 32px}
+.strip li{display:flex;align-items:center;gap:12px;font-size:15.5px;color:var(--ink)}
+.ico{width:20px;height:20px;fill:var(--acc);flex:none}
+.row{display:grid;gap:64px;align-items:center}
+.row--2{grid-template-columns:1fr 1fr}
+.e-img{border-radius:4px;overflow:hidden}
+.e-img img{width:100%;height:100%;object-fit:cover}
+.stack{position:relative;height:520px}
+.stack .a{position:absolute;left:0;top:0;width:72%;height:82%}
+.stack .b{position:absolute;right:0;bottom:0;width:48%;height:52%;border:8px solid var(--bg)}
+.e-ph{border:1.5px dashed var(--acc);background:color-mix(in srgb,var(--acc) 7%,transparent);color:var(--acc);padding:18px 20px;font-size:15px;border-radius:4px;margin-top:22px}
+.e-dark .e-ph{color:var(--acc2);border-color:var(--acc2)}
+.head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;margin-bottom:40px}
+.head p{max-width:460px}
+.cards{display:grid;grid-template-columns:repeat(var(--cols,4),1fr);gap:26px}
+.card .e-img{height:280px;margin-bottom:18px}
+.card p{font-size:15.5px}
+.ibox{padding:30px 28px;border:1px solid var(--line);border-radius:4px;background:var(--bg)}
+.ibox .ico{width:34px;height:34px;margin-bottom:18px}
+.ibox p{font-size:15.5px}
+.price{display:block;margin-top:14px;font:600 14px/1 var(--fb);color:var(--acc)}
+.gal{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:220px;gap:10px}
+.gal .e-img{border-radius:3px}
+.gal .w2{grid-column:span 2}.gal .h2{grid-row:span 2}
+.quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.quote{padding:32px 30px;border:1px solid rgba(255,255,255,.14);border-radius:4px}
+.e-alt .quote{border-color:var(--line);background:var(--bg)}
+.stars{display:flex;gap:3px;margin-bottom:18px}
+.stars .ico{width:16px;height:16px;fill:var(--acc2)}
+.quote p{font-size:16px}
+.quote cite{display:block;margin-top:20px;font:600 13px/1 var(--fb);font-style:normal;letter-spacing:.1em;text-transform:uppercase;opacity:.7}
+.band{background:var(--acc);color:var(--on2)}
+.band .e-in{display:flex;align-items:center;justify-content:space-between;gap:40px}
+.band h2{color:var(--on2);margin:0;font-size:34px}
+.hours{list-style:none;margin-top:8px}
+.hours li{display:flex;justify-content:space-between;padding:11px 0;border-bottom:1px dotted var(--line);font-size:16px}
+.hours li span:first-child{color:var(--ink);font-weight:500}
+.hours li.off span:last-child{opacity:.6}
+.ilist{list-style:none;margin-top:26px}
+.ilist li{display:flex;gap:12px;align-items:flex-start;padding:7px 0}
+.map{height:460px;border-radius:4px;overflow:hidden;border:1px solid var(--line)}
+.map iframe{width:100%;height:100%;border:0}
+.ftr{background:var(--fbg);color:var(--fon);padding:64px 32px 34px}
+.ftr .e-in{max-width:var(--w);margin:0 auto}
+.ftr .cols{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:48px}
+.ftr .logo{color:var(--fon)}
+.ftr h4{font:600 12px/1 var(--fb);letter-spacing:.16em;text-transform:uppercase;margin-bottom:16px;color:var(--acc2)}
+.ftr p,.ftr li{font-size:15px;opacity:.85}
+.ftr ul{list-style:none}
+.ftr li{padding:4px 0}
+.ftr .bot{display:flex;justify-content:space-between;margin-top:48px;padding-top:22px;border-top:1px solid rgba(255,255,255,.14);font-size:13px;opacity:.7}
+.js .fx{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s ease}
+.js .fx.in{opacity:1;transform:none}
+.demo-tag{position:fixed;left:16px;bottom:16px;z-index:60;background:#111;color:#fff;font:500 12px/1 var(--fb);padding:9px 12px;border-radius:3px;opacity:.8}
+</style></head><body>
+<header class="hdr"><div class="e-in">
+<a class="logo" href="#">Delhi Haveli<small>Cocina india · Alcúdia</small></a>
+<nav class="nav"><a href="#casa">La casa</a><a href="#carta">Platos</a><a href="#fotos">Fotos</a><a href="#contacto">Contacto</a></nav>
+<div class="hdr-r"><span class="lang">ES · EN · DE</span><a class="e-btn e-btn--solid e-btn--sm" href="https://wa.me/34695471136?text=Hola%2C%20quer%C3%ADa%20reservar%20mesa%20en%20Delhi%20Haveli." target="_blank" rel="noopener"><svg class="bico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.1 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.3.1.2.1.7-.1 1.3z"/></svg><span>Reservar</span></a></div>
+</div></header>
+<section class="hero hero--full e-con"><div class="bg" style="background-image:url('https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QOD6e1dtLgrScu0XagaX7UOisZQ-ff3K3jMjdo625OFrxhuECDzyt-33QG7qVwpleBR2bPXUFxLDjmXRY1wqtCmfyqFWxAHE6dUNyL_tC2pXlC5Il7755gKEV8RGwoCjpKI3Ebp6S5phM=w2000-h1300-k-no');background-position:center"></div>
+<div class="e-in"><span class="e-label">Cocina india · Alcúdia</span><h1>Curris, tandoori y pan naan recién hecho</h1><p class="e-lead">Para comer aquí, para llevar o a domicilio. Abiertos todos los días de 12:00 a 23:30.</p><div class="btns"><a class="e-btn e-btn--solid" href="https://wa.me/34695471136?text=Hola%2C%20quer%C3%ADa%20reservar%20mesa%20en%20Delhi%20Haveli." target="_blank" rel="noopener"><svg class="bico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.1 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.3.1.2.1.7-.1 1.3z"/></svg><span>Reservar por WhatsApp</span></a><a class="e-btn e-btn--ghost" href="#carta"><span>Ver los platos</span></a></div><div class="hero-badge"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><span>4,8 en Google · 356 reseñas</span></div></div></section>
+<div class="strip"><ul><li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><span>4,8 en Google · 356 reseñas</span></li><li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 10.4V6h-2v7.4l5 3 1-1.7z"/></svg><span>Todos los días · 12:00 – 23:30</span></li><li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 00-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1112 6.5a2.5 2.5 0 010 5z"/></svg><span>Av. Pere Mas i Reus, 1, 07400 Alcúdia</span></li></ul></div>
+<section class="e-con" id="casa"><div class="e-in row row--2">
+<div class="stack fx"><div class="e-img a"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TMCXGsMa9EEC3Ki8MkgrMILBw_gbKmia8bvZBwyDeHnjFR6TMpAVgife3N5yzj7cr_rinbrAYi68cQQLZb8Q47vpFRlEP8yyMSslx4MfAPoGaUhhPCql4_hZXC2DXmoWmAqaCxQ6zvMHAK=w1200-h900-k-no" alt=""></div><div class="e-img b"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RQj7U1n8uVFDCIgLHhqHjF3dct2qAaAPVoKKY0UmgC2YjpdHd04HCeoaBXUOx1dB5q3ZYE3jSQWhoHEDnR-oqZqB8Hdp_Cuxyt2ZRS-mChe_OOu88-gcnq9yMBphKIYOaCh_sfebSPUdQs=w800-h600-k-no" alt=""></div></div>
+<div class="fx"><span class="e-label">La casa</span><h2>Un local amplio y luminoso en Alcúdia</h2><div class="e-text"><p>Cocina india de la de verdad: curris, tandoori, biryani y pan naan hecho al momento.</p><p>Quien viene repite por la comida y por el trato. En las reseñas lo que más se repite es que el personal es amable, rápido y que te recomienda bien qué pedir.</p></div><div class="e-ph"><strong>Aquí va texto</strong> · Vuestra historia en 3-4 líneas: quiénes sois, de dónde es vuestra cocina y desde cuándo estáis en Alcúdia.</div>
+<div class="btns"><a class="e-btn e-btn--line" href="#carta"><span>Ver los platos</span></a></div></div></div></section>
+<section class="e-con e-alt" id="carta"><div class="e-in">
+<div class="head fx"><div><span class="e-label">Lo que más se pide</span><h2>Algunos de nuestros platos</h2></div><p>Lo que más nombran los clientes en Google. La carta completa, con precios, iría aquí mismo.</p></div>
+<div class="cards" style="--cols:4"><div class="card fx"><div class="e-img"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SxiYe4GGU7Dc-7T4HSwpScie27I-fX0gsAMtcVhFMQYr4VGvO5w7GEcIW3AvbnYZVkBDdZ5jGDXdev-gamqgsak6R7U5GnwkcfNauHHo2R0v_TsPKmQhjE9tJmQadg8aiC7NH9I0oX_RA=w900-h700-k-no" alt="Pan naan"></div><h3>Pan naan</h3><p>Recién salido del horno. El mixto y el peshwari son los que más gustan.</p></div><div class="card fx"><div class="e-img"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TuQQNrFD4lJgbUogIpsl2YKoWWEVLA8xN5qFiEUIIy_cjKSLbruz6EzoMmeb0taKjOEM50vPQESCN7nRhVrC6mFAYbMWXFpXt3vTfbpZ47jtQUSgtEfgQQ5LMNcxHT7nEjRTwk5DHUlRo=w900-h700-k-no" alt="Curry korma"></div><h3>Curry korma</h3><p>Suave y cremoso, de los más pedidos de la carta.</p></div><div class="card fx"><div class="e-img"><img src="https://lh3.googleusercontent.com/grass-cs/AABkmLfxv_wzsfr3neMpGUG8h6lrfpx83WSlmiM6UJ1iRq9DpHTMM7liMxZqhAsPlTIY015Gn3coLxUxp3949Am-m7DeveIxQ3bHbgzBHqzf7q6RciEU-c7SO5tAQ8yb7MD3i16-_Cboit6LBojb=w900-h700-k-no" alt="Tandoori"></div><h3>Tandoori</h3><p>Marinado y hecho en el horno, con su punto de especias.</p></div><div class="card fx"><div class="e-img"><img src="https://lh3.googleusercontent.com/grass-cs/AABkmLdbdaen03ED11rF9EO2kU3qdnejnieKRRLRui2ebmJL3u4z56_R0KIThxVFPDdyGZIICm7EXwxlYoL57AXcaPkXG6fyGOqCWcJ2i2Qrr5v1byZxkjivZAV41XKOlLTnC0ANORg-iSlr7mGp=w900-h700-k-no" alt="Para compartir"></div><h3>Para compartir</h3><p>Biryani de cordero, chicken karahi y entrantes al centro.</p></div></div><div class="e-ph"><strong>Aquí va texto</strong> · La carta completa con precios: entrantes, curris, tandoori, biryanis, panes y postres.</div></div></section>
+<section class="e-con" id="fotos"><div class="e-in"><div class="head fx"><div><span class="e-label">Fotos</span><h2>El local y la cocina</h2></div></div>
+<div class="gal fx"><div class="e-img w2 h2"><img src="https://lh3.googleusercontent.com/grass-cs/AABkmLc4gQrXl_9vfY1H_bacjYpjOl__KYYyCEn54xdWCe1wnowk5St3gdXtrhc0jqNXra16SqZNTjSmCEw9ObWLG2fcvF0zb_rmT23xgcsaUwShlPVf9whpXcocFoRHPTyg-BROhxvvOP8te2s=w1000-h800-k-no" alt="" loading="lazy"></div><div class="e-img "><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QOD6e1dtLgrScu0XagaX7UOisZQ-ff3K3jMjdo625OFrxhuECDzyt-33QG7qVwpleBR2bPXUFxLDjmXRY1wqtCmfyqFWxAHE6dUNyL_tC2pXlC5Il7755gKEV8RGwoCjpKI3Ebp6S5phM=w1000-h800-k-no" alt="" loading="lazy"></div><div class="e-img "><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S2FR2mx4sRtmXPj7BpKp89zjGKjaHTHHbvUaq8tDaQN2mIw6dxFFabGL_JGRymf-Z912wzRLeRzVsBc9GfNduEMf93VoxlLcrOdYkMlDUkYnXMI_yi84x6LPqmHczoL9qgzdS78VKsPRY=w1000-h800-k-no" alt="" loading="lazy"></div><div class="e-img "><img src="https://lh3.googleusercontent.com/grass-cs/AABkmLc3qNkbYHpkGJqbZr_jeOl8a98-S1Kl9VPdP9VzTIGWbmjFBfV540ONVzIUKqqPyKSDAWiOFkDxJOd5Ht91nUbagNGUUIcIF-lqbdXM4qQiABZDSIz1_7SW0anU9rsGYIGt6aeszBAezVu6=w1000-h800-k-no" alt="" loading="lazy"></div><div class="e-img "><img src="https://lh3.googleusercontent.com/grass-cs/AABkmLefLoNQoeU38eSuC9DfC0cL2OYkcVb-zWNMxJ6Zlh4W0Vl-fwKhCH370_X62TQaLYApp3xDV65ESatSqJ_yi-W3zpug-m5X56uvUdlw6KWHwxSsXwphiC2tFbKntv35IdiVPgoWTc_vUKc=w1000-h800-k-no" alt="" loading="lazy"></div></div></div></section>
+<section class="e-con e-dark" id="opiniones"><div class="e-in">
+<div class="head fx"><div><span class="e-label">Reseñas en Google</span><h2>4,8 sobre 5 con 356 opiniones</h2></div><p>Lo que dicen quienes ya han venido.</p></div>
+<div class="quotes"><div class="quote fx"><div class="stars"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg></div><p>“Súper recomendable. La comida estaba realmente buena. Nos ha encantado el pan naan mixto, el biryani de cordero y chicken karahi. El personal súper majo y también rápidos al servir.”</p><cite>Sharmaine J.</cite></div><div class="quote fx"><div class="stars"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg></div><p>“Fui a comer y todo lo que probemos muy bueno. El personal amable y simpático. El local grande y muy luminoso. Todo genial, recomendable!”</p><cite>Toni M.</cite></div><div class="quote fx"><div class="stars"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg></div><p>“La comida me ha gustado mucho .el restaurante está muy bonito decorado y son muy amables.Lo recomiendo .volveremos.”</p><cite>Enri L.</cite></div></div></div></section>
+<section class="e-con band" style="padding-top:64px;padding-bottom:64px"><div class="e-in"><h2>Mesa para hoy, o pedido para llevar. Escríbenos.</h2><a class="e-btn e-btn--light" href="https://wa.me/34695471136?text=Hola%2C%20quer%C3%ADa%20reservar%20mesa%20en%20Delhi%20Haveli." target="_blank" rel="noopener"><svg class="bico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.1 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.3.1.2.1.7-.1 1.3z"/></svg><span>Escribir por WhatsApp</span></a></div></section>
+<section class="e-con" id="contacto"><div class="e-in row row--2" style="align-items:start">
+<div class="fx"><span class="e-label">Dónde estamos</span><h2>En la avenida Pere Mas i Reus, Alcúdia</h2>
+<h3 style="margin-top:26px;font-size:20px">Horario</h3><ul class="hours"><li class=""><span>Lunes</span><span>12:00 – 23:30</span></li><li class=""><span>Martes</span><span>12:00 – 23:30</span></li><li class=""><span>Miércoles</span><span>12:00 – 23:30</span></li><li class=""><span>Jueves</span><span>12:00 – 23:30</span></li><li class=""><span>Viernes</span><span>12:00 – 23:30</span></li><li class=""><span>Sábado</span><span>12:00 – 23:30</span></li><li class=""><span>Domingo</span><span>12:00 – 23:30</span></li></ul>
+<ul class="ilist"><li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 00-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1112 6.5a2.5 2.5 0 010 5z"/></svg><span>Av. Pere Mas i Reus, 1, 07400 Alcúdia</span></li><li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 013 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg><span>695 47 11 36</span></li></ul>
+<div class="btns"><a class="e-btn e-btn--solid" href="https://wa.me/34695471136?text=Hola%2C%20quer%C3%ADa%20reservar%20mesa%20en%20Delhi%20Haveli." target="_blank" rel="noopener"><svg class="bico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.1 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.3.1.2.1.7-.1 1.3z"/></svg><span>Reservar por WhatsApp</span></a><a class="e-btn e-btn--line" href="https://www.google.com/maps/search/?api=1&amp;query=Delhi%20Haveli%2C%20Av.%20Pere%20Mas%20i%20Reus%2C%201%2C%2007400%20Alc%C3%BAdia%2C%20Illes%20Balears" target="_blank" rel="noopener"><span>Cómo llegar</span></a></div></div>
+<div class="map fx"><iframe loading="lazy" src="https://maps.google.com/maps?q=Delhi%20Haveli%2C%20Av.%20Pere%20Mas%20i%20Reus%2C%201%2C%2007400%20Alc%C3%BAdia%2C%20Illes%20Balears&z=16&output=embed" title="Mapa"></iframe></div></div></section>
+<footer class="ftr"><div class="e-in"><div class="cols">
+<div><a class="logo" href="#">Delhi Haveli<small>Cocina india · Alcúdia</small></a><p style="margin-top:18px;max-width:360px">Cocina india en Alcúdia. Para comer aquí, para llevar o a domicilio.</p></div>
+<div><h4>Horario</h4><ul><li>Todos los días</li><li>12:00 – 23:30</li></ul></div>
+<div><h4>Contacto</h4><ul><li>Av. Pere Mas i Reus, 1, 07400 Alcúdia</li><li>695 47 11 36</li><li><a href="https://wa.me/34695471136?text=Hola%2C%20quer%C3%ADa%20reservar%20mesa%20en%20Delhi%20Haveli." target="_blank" rel="noopener">WhatsApp</a></li></ul></div>
+</div><div class="bot"><span>© 2026 Delhi Haveli</span><span>Diseño web: NovaOlmo</span></div></div></footer>
+<div class="demo-tag">Web de muestra · NovaOlmo</div>
+<script>
+(function(){document.documentElement.classList.add('js');var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.12});document.querySelectorAll('.fx').forEach(function(el){io.observe(el)})})();
+</script>
+</body></html>

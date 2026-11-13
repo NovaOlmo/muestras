@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Talleres Almi · Taller en Palma</title>
+<meta name="description" content="Trabajamos con tu seguro. Rápidos, cuidadosos y con un trato cercano. De lunes a viernes de 8:00 a 18:00.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F3F5F8;--bg2:#E3E8EF;--ink:#0E1A2B;--text:#475467;--acc:#1D56C9;--acc2:#F28C28;--line:rgba(0,0,0,.12);--on:#F7F2EA;
+--on2:#FFFFFF;--hbg:rgba(255,255,255,.97);--hink:#0E1A2B;--fbg:#0E1A2B;--fon:#D8DFEA;
+--fh:'Barlow Condensed',Arial,sans-serif;--fb:'Barlow',system-ui,sans-serif;--w:1200px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{background:var(--bg);color:var(--text);font:400 17px/1.65 var(--fb);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.e-con{padding:104px 32px}
+.e-con>.e-in{max-width:var(--w);margin:0 auto}
+.e-alt{background:var(--bg2)}
+.e-dark{background:var(--ink);color:var(--on)}
+.e-dark h2,.e-dark h3{color:var(--on)}
+h1,h2,h3{font-family:var(--fh);color:var(--ink);font-weight:700;line-height:1.08;letter-spacing:0}
+h1{font-size:76px}
+h2{font-size:50px;margin-bottom:18px}
+h3{font-size:24px;margin-bottom:8px}
+.e-label{font:600 12.5px/1 var(--fb);letter-spacing:.16em;text-transform:uppercase;color:var(--acc);margin-bottom:16px;display:block}
+.e-dark .e-label{color:var(--acc2)}
+.e-text p+p{margin-top:14px}
+.e-lead{font-size:19px;max-width:560px}
+.hdr{position:sticky;top:0;z-index:50;background:var(--hbg);border-bottom:1px solid var(--line);backdrop-filter:blur(6px)}
+.hdr .e-in{max-width:var(--w);margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:76px;padding:0 32px;gap:28px}
+.logo{font:700 28px/1 var(--fh);color:var(--hink);text-decoration:none;letter-spacing:0;white-space:nowrap}
+.logo small{display:block;font:600 10.5px/1 var(--fb);letter-spacing:.2em;text-transform:uppercase;opacity:.65;margin-top:5px}
+.nav{display:flex;gap:30px;font:500 15px/1 var(--fb)}
+.nav a{text-decoration:none;color:var(--hink);opacity:.85}
+.nav a:hover{opacity:1;color:var(--acc)}
+.hdr-r{display:flex;align-items:center;gap:18px}
+.lang{font:600 12px/1 var(--fb);letter-spacing:.12em;color:var(--hink);opacity:.6;white-space:nowrap}
+.e-btn{display:inline-flex;align-items:center;gap:9px;padding:15px 26px;font:600 15px/1 var(--fb);text-decoration:none;border-radius:2px;border:2px solid var(--acc);transition:.2s;white-space:nowrap}
+.e-btn--solid{background:var(--acc);color:var(--on2)}
+.e-btn--solid:hover{filter:brightness(1.08)}
+.e-btn--line{color:var(--ink);border-color:var(--ink)}
+.e-btn--light{background:#fff;color:#111;border-color:#fff}
+.e-btn--ghost{color:#fff;border-color:rgba(255,255,255,.8)}
+.e-btn--sm{padding:11px 18px;font-size:14px}
+.bico{width:18px;height:18px;fill:currentColor}
+.btns{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}
+.hero{position:relative;color:#fff}
+.hero--full{min-height:640px;display:flex;align-items:flex-end}
+.hero--full .bg{position:absolute;inset:0;background-size:cover;background-position:center}
+.hero--full .bg:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.75) 0%,rgba(0,0,0,.25) 65%,rgba(0,0,0,.1))}
+.hero--full .e-in{position:relative;width:100%;padding:120px 0 96px}
+.hero--full h1{color:#fff;max-width:720px}
+.hero--full .e-lead{color:rgba(255,255,255,.9);margin-top:20px}
+.hero--full .e-label{color:var(--acc2)}
+.hero--split{color:var(--text);background:var(--bg)}
+.hero--split .e-in{display:grid;grid-template-columns:1fr 1.05fr;gap:64px;align-items:center;padding:72px 0 88px}
+.hero--split .e-lead{margin-top:20px}
+.hero--split .pic{height:560px;border-radius:4px;overflow:hidden}
+.hero--split .pic img{width:100%;height:100%;object-fit:cover}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;margin-top:34px;font:500 14.5px/1.3 var(--fb);color:var(--text)}
+.hero--full .hero-badge{color:rgba(255,255,255,.88)}
+.hero-badge .ico{width:18px;height:18px;fill:var(--acc2)}
+.strip{background:var(--bg2);border-bottom:1px solid var(--line)}
+.strip ul{list-style:none;max-width:var(--w);margin:0 auto;display:flex;justify-content:space-between;gap:24px;padding:24px 32px}
+.strip li{display:flex;align-items:center;gap:12px;font-size:15.5px;color:var(--ink)}
+.ico{width:20px;height:20px;fill:var(--acc);flex:none}
+.row{display:grid;gap:64px;align-items:center}
+.row--2{grid-template-columns:1fr 1fr}
+.e-img{border-radius:4px;overflow:hidden}
+.e-img img{width:100%;height:100%;object-fit:cover}
+.stack{position:relative;height:520px}
+.stack .a{position:absolute;left:0;top:0;width:72%;height:82%}
+.stack .b{position:absolute;right:0;bottom:0;width:48%;height:52%;border:8px solid var(--bg)}
+.e-ph{border:1.5px dashed var(--acc);background:color-mix(in srgb,var(--acc) 7%,transparent);color:var(--acc);padding:18px 20px;font-size:15px;border-radius:4px;margin-top:22px}
+.e-dark .e-ph{color:var(--acc2);border-color:var(--acc2)}
+.head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;margin-bottom:40px}
+.head p{max-width:460px}
+.cards{display:grid;grid-template-columns:repeat(var(--cols,4),1fr);gap:26px}
+.card .e-img{height:280px;margin-bottom:18px}
+.card p{font-size:15.5px}
+.ibox{padding:30px 28px;border:1px solid var(--line);border-radius:4px;background:var(--bg)}
+.ibox .ico{width:34px;height:34px;margin-bottom:18px}
+.ibox p{font-size:15.5px}
+.price{display:block;margin-top:14px;font:600 14px/1 var(--fb);color:var(--acc)}
+.gal{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:220px;gap:10px}
+.gal .e-img{border-radius:2px}
+.gal .w2{grid-column:span 2}.gal .h2{grid-row:span 2}
+.quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.quote{padding:32px 30px;border:1px solid rgba(255,255,255,.14);border-radius:4px}
+.e-alt .quote{border-color:var(--line);background:var(--bg)}
+.stars{display:flex;gap:3px;margin-bottom:18px}
+.stars .ico{width:16px;height:16px;fill:var(--acc2)}
+.quote p{font-size:16px}
+.quote cite{display:block;margin-top:20px;font:600 13px/1 var(--fb);font-style:normal;letter-spacing:.1em;text-transform:uppercase;opacity:.7}
+.band{background:var(--acc);color:var(--on2)}
+.band .e-in{display:flex;align-items:center;justify-content:space-between;gap:40px}
+.band h2{color:var(--on2);margin:0;font-size:34px}
+.hours{list-style:none;margin-top:8px}
+.hours li{display:flex;justify-content:space-between;padding:11px 0;border-bottom:1px dotted var(--line);font-size:16px}
+.hours li span:first-child{color:var(--ink);font-weight:500}
+.hours li.off span:last-child{opacity:.6}
+.ilist{list-style:none;margin-top:26px}
+.ilist li{display:flex;gap:12px;align-items:flex-start;padding:7px 0}
+.map{height:460px;border-radius:4px;overflow:hidden;border:1px solid var(--line)}
+.map iframe{width:100%;height:100%;border:0}
+.ftr{background:var(--fbg);color:var(--fon);padding:64px 32px 34px}
+.ftr .e-in{max-width:var(--w);margin:0 auto}
+.ftr .cols{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:48px}
+.ftr .logo{color:var(--fon)}
+.ftr h4{font:600 12px/1 var(--fb);letter-spacing:.16em;text-transform:uppercase;margin-bottom:16px;color:var(--acc2)}
+.ftr p,.ftr li{font-size:15px;opacity:.85}
+.ftr ul{list-style:none}
+.ftr li{padding:4px 0}
+.ftr .bot{display:flex;justify-content:space-between;margin-top:48px;padding-top:22px;border-top:1px solid rgba(255,255,255,.14);font-size:13px;opacity:.7}
+.js .fx{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s ease}
+.js .fx.in{opacity:1;transform:none}
+.demo-tag{position:fixed;left:16px;bottom:16px;z-index:60;background:#111;color:#fff;font:500 12px/1 var(--fb);padding:9px 12px;border-radius:3px;opacity:.8}
+</style></head><body>
+<header class="hdr"><div class="e-in">
+<a class="logo" href="#">Talleres Almi<small>Taller de chapa y mecánica · Palma</small></a>
+<nav class="nav"><a href="#casa">El taller</a><a href="#servicios">Servicios</a><a href="#opiniones">Opiniones</a><a href="#contacto">Contacto</a></nav>
+<div class="hdr-r"><a class="e-btn e-btn--solid e-btn--sm" href="https://wa.me/34609692860?text=Hola%2C%20quer%C3%ADa%20pedir%20presupuesto%20en%20Talleres%20Almi." target="_blank" rel="noopener"><svg class="bico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.1 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.3.1.2.1.7-.1 1.3z"/></svg><span>Pedir presupuesto</span></a></div>
+</div></header>
+<section class="hero hero--split e-con"><div class="e-in"><div class="fx"><span class="e-label">Taller en Palma</span><h1>Chapa, pintura y reparaciones en Palma</h1><p class="e-lead">Trabajamos con tu seguro. Rápidos, cuidadosos y con un trato cercano. De lunes a viernes de 8:00 a 18:00.</p><div class="btns"><a class="e-btn e-btn--solid" href="https://wa.me/34609692860?text=Hola%2C%20quer%C3%ADa%20pedir%20presupuesto%20en%20Talleres%20Almi." target="_blank" rel="noopener"><svg class="bico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.1 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.3.1.2.1.7-.1 1.3z"/></svg><span>Pedir presupuesto</span></a><a class="e-btn e-btn--line" href="#servicios"><span>Ver servicios</span></a></div><div class="hero-badge"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><span>4,8 en Google · 96 reseñas</span></div></div>
+<div class="pic fx"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TJeSNPxC_YWyX9z2XwvOWJoNZ96jJ8ZWPQ8SI0ISVvFmhI7XRGlkPkhY9dknRsTrYCgTgkgq1Ntuuc_M-XlBiS6R9i794X7NMMIAyv5tVDwXo9p6bsL5OkvdhKhul5J7j7vlnVyqBh--A=w1600-h1100-k-no" alt="Talleres Almi" style="object-position:center"></div></div></section>
+<div class="strip"><ul><li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><span>4,8 en Google · 96 reseñas</span></li><li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 10.4V6h-2v7.4l5 3 1-1.7z"/></svg><span>Lunes a viernes · 8:00 – 18:00</span></li><li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 00-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1112 6.5a2.5 2.5 0 010 5z"/></svg><span>Carrer de Guillem Cifre de Colonya, 4, Nord, 07010 Palma</span></li></ul></div>
+<section class="e-con" id="casa"><div class="e-in row row--2">
+<div class="stack fx"><div class="e-img a"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TNtZB7-4kPUiedQysR6JOkpd80dgmv771x1PErQvVetMXqNH5FkF-_d8RcLA0lkFXX2T0DUHepMlcWonXps-17c_crZpIVv2gY6GLkiDdK25ojcs-S2iPFtWOrlZFfV_T3r7DKEA=w1200-h900-k-no" alt=""></div><div class="e-img b"><img src="https://lh3.googleusercontent.com/grass-cs/AABkmLdeN1lfot4tWS3Y2VKsTginCU9O5vmscvGjh6RSYDXwAGQ4d1-nt0ipc4M32uk9vPvaOISuvgGunEa28GKUbXZknrb4Z4d4mMQ0PlG-v2lSDcsKZ77L1DrRIise9RPYFFb4lWj4z06IGla2=w800-h600-k-no" alt=""></div></div>
+<div class="fx"><span class="e-label">El taller</span><h2>Un taller de confianza en Palma</h2><div class="e-text"><p>Reparamos golpes de chapa, portones, paragolpes y lo que necesite tu coche. Muchos clientes vienen a través de su aseguradora y repiten.</p><p>Lo que más se valora en las reseñas: la rapidez, el resultado y el trato del dueño.</p></div><div class="e-ph"><strong>Aquí va texto</strong> · Quiénes sois: desde cuándo está el taller, el equipo y con qué aseguradoras trabajáis.</div>
+<div class="btns"><a class="e-btn e-btn--line" href="#contacto"><span>Pedir presupuesto</span></a></div></div></div></section>
+<section class="e-con e-alt" id="servicios"><div class="e-in">
+<div class="head fx"><div><span class="e-label">Servicios</span><h2>Qué hacemos</h2></div><p>Pásanos fotos del golpe por WhatsApp y te decimos qué necesita.</p></div>
+<div class="cards" style="--cols:4"><div class="ibox fx"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 6c-.2-.6-.8-1-1.4-1h-11c-.7 0-1.2.4-1.4 1L3 12v8c0 .6.4 1 1 1h1c.6 0 1-.4 1-1v-1h12v1c0 .6.4 1 1 1h1c.6 0 1-.4 1-1v-8zM6.5 16a1.5 1.5 0 110-3 1.5 1.5 0 010 3zm11 0a1.5 1.5 0 110-3 1.5 1.5 0 010 3zM5 11l1.5-4.5h11L19 11z"/></svg><h3>Chapa y pintura</h3><p>Golpes, paragolpes, portones y arañazos. Que quede como el primer día.</p></div><div class="ibox fx"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1L3 5v6c0 5.6 3.8 10.7 9 12 5.2-1.3 9-6.4 9-12V5zm-2 16l-4-4 1.4-1.4 2.6 2.6 6.6-6.6L18 9z"/></svg><h3>Con tu seguro</h3><p>Si tu aseguradora te deja elegir taller, nos encargamos de todo.</p></div><div class="ibox fx"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/></svg><h3>Reparaciones</h3><p>Bombines, cerraduras y otras reparaciones del coche.</p></div><div class="ibox fx"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 2H4a2 2 0 00-2 2v18l4-4h14a2 2 0 002-2V4a2 2 0 00-2-2z"/></svg><h3>Presupuesto por WhatsApp</h3><p>Mándanos fotos y te respondemos rápido con un presupuesto.</p></div></div><div class="e-ph"><strong>Aquí va texto</strong> · Lista completa de servicios, aseguradoras con las que trabajáis y si tenéis coche de sustitución.</div></div></section>
+
+<section class="e-con e-dark" id="opiniones"><div class="e-in">
+<div class="head fx"><div><span class="e-label">Reseñas en Google</span><h2>4,8 sobre 5 con 96 opiniones</h2></div><p>Lo que dicen quienes ya han traído su coche.</p></div>
+<div class="quotes"><div class="quote fx"><div class="stars"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg></div><p>“Dejé mi coche a través del seguro para una reparación de chapa y no puedo estar más satisfecho. 🚗✨ Desde el primer contacto hasta la entrega del vehículo, todo fue de 10. El trato, la atención y el resultado final, impecables. ¡Quedó todo perfecto! 👌🔧 Sin…”</p><cite>Samuel P.</cite></div><div class="quote fx"><div class="stars"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg></div><p>“Muy contenta con el trabajo de Miguel . Deje mi coche para una reparación, en principio iban hacer 3 días, pero a las 24 hrs me llamaron a decir que lo tenían terminado, una maravilla!! Super eficientes, rapidez y amabilidad. Sin duda para dejar una reseña”</p><cite>Chiara S.</cite></div><div class="quote fx"><div class="stars"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg></div><p>“Les doy un 5* por el servicio, trato, y trabajo realizado en mi vehículo. No soy dado a este tipo de acciones, pero en este caso he querido expresar mi satisfacción en la reparación del portón trasero de mi vehículo. Un trabajo perfecto.Seguid así!!”</p><cite>Adolfo P.</cite></div></div></div></section>
+<section class="e-con band" style="padding-top:64px;padding-bottom:64px"><div class="e-in"><h2>Mándanos una foto del golpe y te damos presupuesto.</h2><a class="e-btn e-btn--light" href="https://wa.me/34609692860?text=Hola%2C%20quer%C3%ADa%20pedir%20presupuesto%20en%20Talleres%20Almi." target="_blank" rel="noopener"><svg class="bico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.1 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.3.1.2.1.7-.1 1.3z"/></svg><span>Pedir presupuesto</span></a></div></section>
+<section class="e-con" id="contacto"><div class="e-in row row--2" style="align-items:start">
+<div class="fx"><span class="e-label">Dónde estamos</span><h2>Carrer de Guillem Cifre de Colonya, 4 · Palma</h2>
+<h3 style="margin-top:26px;font-size:20px">Horario</h3><ul class="hours"><li class=""><span>Lunes</span><span>8:00 – 18:00</span></li><li class=""><span>Martes</span><span>8:00 – 18:00</span></li><li class=""><span>Miércoles</span><span>8:00 – 18:00</span></li><li class=""><span>Jueves</span><span>8:00 – 18:00</span></li><li class=""><span>Viernes</span><span>8:00 – 18:00</span></li><li class="off"><span>Sábado</span><span>Cerrado</span></li><li class="off"><span>Domingo</span><span>Cerrado</span></li></ul>
+<ul class="ilist"><li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 00-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1112 6.5a2.5 2.5 0 010 5z"/></svg><span>Carrer de Guillem Cifre de Colonya, 4, Nord, 07010 Palma</span></li><li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 013 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg><span>609 69 28 60</span></li></ul>
+<div class="btns"><a class="e-btn e-btn--solid" href="https://wa.me/34609692860?text=Hola%2C%20quer%C3%ADa%20pedir%20presupuesto%20en%20Talleres%20Almi." target="_blank" rel="noopener"><svg class="bico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.1 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.3.1.2.1.7-.1 1.3z"/></svg><span>Pedir presupuesto por WhatsApp</span></a><a class="e-btn e-btn--line" href="https://www.google.com/maps/search/?api=1&amp;query=Talleres%20Almi%2C%20Carrer%20de%20Guillem%20Cifre%20de%20Colonya%2C%204%2C%20Nord%2C%2007010%20Palma%2C%20Illes%20Balears" target="_blank" rel="noopener"><span>Cómo llegar</span></a></div></div>
+<div class="map fx"><iframe loading="lazy" src="https://maps.google.com/maps?q=Talleres%20Almi%2C%20Carrer%20de%20Guillem%20Cifre%20de%20Colonya%2C%204%2C%20Nord%2C%2007010%20Palma%2C%20Illes%20Balears&z=16&output=embed" title="Mapa"></iframe></div></div></section>
+<footer class="ftr"><div class="e-in"><div class="cols">
+<div><a class="logo" href="#">Talleres Almi<small>Taller de chapa y mecánica · Palma</small></a><p style="margin-top:18px;max-width:360px">Taller de chapa, pintura y reparaciones en Palma.</p></div>
+<div><h4>Horario</h4><ul><li>Lunes a viernes</li><li>8:00 – 18:00</li><li>Sábado y domingo cerrado</li></ul></div>
+<div><h4>Contacto</h4><ul><li>Carrer de Guillem Cifre de Colonya, 4, Nord, 07010 Palma</li><li>609 69 28 60</li><li><a href="https://wa.me/34609692860?text=Hola%2C%20quer%C3%ADa%20pedir%20presupuesto%20en%20Talleres%20Almi." target="_blank" rel="noopener">WhatsApp</a></li></ul></div>
+</div><div class="bot"><span>© 2026 Talleres Almi</span><span>Diseño web: NovaOlmo</span></div></div></footer>
+<div class="demo-tag">Web de muestra · NovaOlmo</div>
+<script>
+(function(){document.documentElement.classList.add('js');var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.12});document.querySelectorAll('.fx').forEach(function(el){io.observe(el)})})();
+</script>
+</body></html>
