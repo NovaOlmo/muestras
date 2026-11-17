@@ -116,22 +116,113 @@ h3{font-size:20px;margin-bottom:8px}
 .js .fx{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s ease}
 .js .fx.in{opacity:1;transform:none}
 .demo-tag{position:fixed;left:16px;bottom:16px;z-index:60;background:#111;color:#fff;font:500 12px/1 var(--fb);padding:9px 12px;border-radius:3px;opacity:.8}
+
+/* menú móvil (Elementor: Nav Menu > desplegable en tablet/móvil) */
+.burger{display:none;background:none;border:0;width:44px;height:44px;cursor:pointer;color:var(--hink);padding:0}
+.burger span{display:block;width:24px;height:2px;background:currentColor;margin:5px auto;transition:.3s}
+.burger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}.burger.open span:nth-child(2){opacity:0}.burger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.nav a.on{color:var(--acc);opacity:1}
+/* cabecera de página interior */
+.phero{position:relative;color:#fff;min-height:340px;display:flex;align-items:flex-end}
+.phero .bg{position:absolute;inset:0;background-size:cover;background-position:center}
+.phero .bg:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.72),rgba(0,0,0,.25))}
+.phero .e-in{position:relative;width:100%;max-width:var(--w);margin:0 auto;padding:110px 32px 56px}
+.phero h1{color:#fff;font-size:clamp(38px,5vw,60px)}
+.phero .e-label{color:var(--acc2)}
+.phero p{color:rgba(255,255,255,.9);max-width:620px;margin-top:14px;font-size:18px}
+/* carta */
+.menu{display:grid;grid-template-columns:1fr 1fr;gap:48px 72px}
+.mblock h3{font-size:26px;padding-bottom:12px;border-bottom:2px solid var(--acc);margin-bottom:6px}
+.mblock ul{list-style:none}
+.mblock li{padding:14px 0;border-bottom:1px dotted var(--line)}
+.mblock li b{display:block;color:var(--ink);font:600 17px/1.3 var(--fb)}
+.mblock li span{display:block;font-size:15px;margin-top:3px;opacity:.85}
+.note{margin-top:36px;font-size:15px;opacity:.8}
+.gal--big{grid-auto-rows:260px}
+/* tarjetas de página (accesos) */
+.links{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.lk{position:relative;display:block;height:300px;border-radius:var(--rad2,6px);overflow:hidden;text-decoration:none;color:#fff}
+.lk img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.lk:hover img{transform:scale(1.05)}
+.lk:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.7),rgba(0,0,0,0) 60%)}
+.lk div{position:absolute;left:24px;bottom:22px;z-index:1}
+.lk h3{color:#fff;margin:0}
+.lk span{font:600 13px/1 var(--fb);letter-spacing:.12em;text-transform:uppercase;opacity:.85}
+/* entrada del hero */
+@keyframes up{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:none}}
+@keyframes zoom{from{transform:scale(1.12)}to{transform:scale(1)}}
+.hero,.phero{overflow:hidden}
+html,body{overflow-x:hidden}
+.hero--full .bg,.phero .bg{animation:zoom 2.4s ease-out both}
+.hero .e-in>*,.phero .e-in>*{animation:up .9s ease-out both}
+.hero .e-in>*:nth-child(2),.phero .e-in>*:nth-child(2){animation-delay:.12s}
+.hero .e-in>*:nth-child(3),.phero .e-in>*:nth-child(3){animation-delay:.24s}
+.hero .e-in>*:nth-child(4){animation-delay:.36s}.hero .e-in>*:nth-child(5){animation-delay:.48s}
+/* botón flotante de WhatsApp */
+.wa-float{position:fixed;right:18px;bottom:18px;z-index:70;width:58px;height:58px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 20px rgba(0,0,0,.25)}
+.wa-float svg{width:30px;height:30px;fill:#fff}
+@media(max-width:980px){
+.burger{display:block}
+.hdr .e-in{padding:0 20px;height:68px;position:relative;gap:12px}
+.nav{display:none;position:absolute;top:68px;left:0;right:0;background:var(--hbg);flex-direction:column;gap:0;padding:6px 24px 18px;border-bottom:1px solid var(--line);box-shadow:0 12px 24px rgba(0,0,0,.08)}
+.nav.open{display:flex}
+.nav a{padding:15px 0;font-size:18px;border-bottom:1px solid var(--line)}
+.hdr-r .e-btn{display:none}
+.lang{display:none}
+.row--2,.row--57,.hero--split .e-in{grid-template-columns:1fr;gap:40px}
+.cards{grid-template-columns:repeat(2,1fr)}
+.quotes{grid-template-columns:1fr}
+.links{grid-template-columns:1fr 1fr}
+.ftr .cols{grid-template-columns:1fr 1fr}
+.head{flex-direction:column;align-items:flex-start;gap:8px}
+.band .e-in{flex-direction:column;align-items:flex-start;gap:24px}
+.strip ul{flex-wrap:wrap;justify-content:flex-start}
+.menu{grid-template-columns:1fr}
+}
+@media(max-width:640px){
+.e-con{padding:68px 20px}
+h1{font-size:40px}
+h2{font-size:32px}
+.e-lead{font-size:17px}
+.logo{font-size:24px}
+.hero--full{min-height:88vh}
+.hero--full .e-in{padding:100px 0 48px}
+.hero--full .bg:after{background:linear-gradient(0deg,rgba(0,0,0,.78),rgba(0,0,0,.2) 75%)}
+.hero--split .e-in{padding:32px 0 56px}
+.hero--split .pic{height:340px}
+.stack{height:380px}
+.cards{grid-template-columns:1fr}
+.card .e-img{height:240px}
+.gal,.gal--big{grid-template-columns:1fr 1fr;grid-auto-rows:150px}
+.gal .w2{grid-column:span 2}
+.links{grid-template-columns:1fr}
+.lk{height:220px}
+.map{height:320px}
+.ftr{padding:52px 20px 90px}
+.ftr .cols{grid-template-columns:1fr;gap:30px}
+.ftr .bot{flex-direction:column;gap:8px}
+.strip ul{flex-direction:column;gap:12px;padding:22px 20px}
+.btns .e-btn{width:100%;justify-content:center}
+.phero{min-height:280px}
+.phero .e-in{padding:96px 20px 40px}
+.demo-tag{display:none}
+}
 </style></head><body>
 <header class="hdr"><div class="e-in">
 <a class="logo" href="#">Royal Grill<small>Brasa · Playa de Muro</small></a>
-<nav class="nav"><a href="#casa">La casa</a><a href="#carta">Cocina</a><a href="#fotos">Fotos</a><a href="#contacto">Reservas</a></nav>
-<div class="hdr-r"><span class="lang">ES · EN · DE</span><a class="e-btn e-btn--solid e-btn--sm" href="https://wa.me/34673616246?text=Hola%2C%20quer%C3%ADa%20reservar%20mesa%20en%20Royal%20Grill." target="_blank" rel="noopener"><svg class="bico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.1 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.3.1.2.1.7-.1 1.3z"/></svg><span>Reservar</span></a></div>
+<nav class="nav" id="nav"><a onclick="document.getElementById('nav').classList.remove('open')" href="#casa">La casa</a><a onclick="document.getElementById('nav').classList.remove('open')" href="#carta">Cocina</a><a onclick="document.getElementById('nav').classList.remove('open')" href="#fotos">Fotos</a><a onclick="document.getElementById('nav').classList.remove('open')" href="#contacto">Reservas</a></nav>
+<div class="hdr-r"><span class="lang">ES · EN · DE</span><a class="e-btn e-btn--solid e-btn--sm" href="https://wa.me/34673616246?text=Hola%2C%20quer%C3%ADa%20reservar%20mesa%20en%20Royal%20Grill." target="_blank" rel="noopener"><svg class="bico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.1 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.3.1.2.1.7-.1 1.3z"/></svg><span>Reservar</span></a><button class="burger" aria-label="Menú" onclick="this.classList.toggle('open');document.getElementById('nav').classList.toggle('open')"><span></span><span></span><span></span></button></div>
 </div></header>
 <section class="hero hero--full e-con"><div class="bg" style="background-image:url('https://lh3.googleusercontent.com/grass-cs/AABkmLcOeXXYRm4-8Jcwg88M3DRzVSXR4L3kxeaZbcvaw7fB4gSov55Bg4TTh7rnbw32BkAzzaYneyg6CglFd0oqrzt50Lg4cryvPqJUD8p68a5jGWvN4h52DX0shUK8XkssvID9DUcXNgUWOIfd=w2000-h1300-k-no');background-position:center"></div>
 <div class="e-in"><span class="e-label">Brasa y arroces · Playa de Muro</span><h1>Carnes a la brasa y paellas en Playa de Muro</h1><p class="e-lead">Apartados de la avenida principal, con terraza a la sombra y una carta para todos, también para los peques.</p><div class="btns"><a class="e-btn e-btn--solid" href="https://wa.me/34673616246?text=Hola%2C%20quer%C3%ADa%20reservar%20mesa%20en%20Royal%20Grill." target="_blank" rel="noopener"><svg class="bico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.1 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.3.1.2.1.7-.1 1.3z"/></svg><span>Reservar por WhatsApp</span></a><a class="e-btn e-btn--ghost" href="#carta"><span>Ver la cocina</span></a></div><div class="hero-badge"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><span>4,5 en Google · 691 reseñas</span></div></div></section>
 <div class="strip"><ul><li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><span>4,5 en Google · 691 reseñas</span></li><li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 10.4V6h-2v7.4l5 3 1-1.7z"/></svg><span>10:30–16:00 y 18:00–22:30 · jueves cerrado</span></li><li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 00-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1112 6.5a2.5 2.5 0 010 5z"/></svg><span>Avinguda de s&#x27;Albufera, centro comercial el patio número 33,34,35,36, 07458 Playa deMuro</span></li></ul></div>
 <section class="e-con" id="casa"><div class="e-in row row--2">
 <div class="stack fx"><div class="e-img a"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T3fCOzHVVP3TTYZSeRjXZpSOvXzHQlL86FW38JW3CLWfTfSibImuSDdZ3Y3qhWrL8CkiBckQTbbAIWWWAS5WY3VU1rfdtmnC-BicyJ3fegC-LVsJWt3q9a1RSXbkC2zIHjIxJd=w1200-h900-k-no" alt=""></div><div class="e-img b"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SHQHpN-T7C0hoFeuUyXQyoycB8YJSimrvPbfdRhA-g7rvEhy9zsS63JKq281yR7m4fcJvD_r9Z-jAG1Em-DVHE6cvwBgspZ7RqJdN5ntETNs_vQNicc4QMH44QLe_QqMXWPoo=w800-h600-k-no" alt=""></div></div>
-<div class="fx"><span class="e-label">La casa</span><h2>Para cenar tranquilo después de un día de playa</h2><div class="e-text"><p>Estamos en el centro comercial El Patio, fuera del ruido de la avenida. Mesas dentro y terraza a la sombra.</p><p>Carta variada con entrantes, ensaladas, carnes, pescados y arroces, carta infantil y una relación calidad-precio que nombran casi todas las reseñas.</p></div><div class="e-ph"><strong>Aquí va texto</strong> · Vuestra historia y la carne que trabajáis en la brasa.</div>
+<div class="fx"><span class="e-label">La casa</span><h2>Para cenar tranquilo después de un día de playa</h2><div class="e-text"><p>Estamos en el centro comercial El Patio, fuera del ruido de la avenida. Mesas dentro y terraza a la sombra.</p><p>Carta variada con entrantes, ensaladas, carnes, pescados y arroces, carta infantil y una relación calidad-precio que nombran casi todas las reseñas.</p></div>
 <div class="btns"><a class="e-btn e-btn--line" href="#contacto"><span>Reservar mesa</span></a></div></div></div></section>
 <section class="e-con e-alt" id="carta"><div class="e-in">
 <div class="head fx"><div><span class="e-label">Cocina</span><h2>De la brasa y de la paella</h2></div><p>Lo que más nombran los clientes en Google.</p></div>
-<div class="cards" style="--cols:4"><div class="card fx"><div class="e-img"><img src="https://lh3.googleusercontent.com/grass-cs/AABkmLcOeXXYRm4-8Jcwg88M3DRzVSXR4L3kxeaZbcvaw7fB4gSov55Bg4TTh7rnbw32BkAzzaYneyg6CglFd0oqrzt50Lg4cryvPqJUD8p68a5jGWvN4h52DX0shUK8XkssvID9DUcXNgUWOIfd=w900-h700-k-no" alt="Carnes a la brasa"></div><h3>Carnes a la brasa</h3><p>Solomillo, paletilla de cordero y carnes de calidad al punto.</p></div><div class="card fx"><div class="e-img"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S1JILh63ArZdC9VBA0okzrelFqTlZvyGKJ1Z9lmu1hGHudhIaf9aHZXJ8wRF2_YNxvMMA1R_YC-NnIdqEv24dI4Gz9sXarS9x90j41BVTjklXU6WB-dhf1IEyGehZKNVhSNzPmHufvJXcP=w900-h700-k-no" alt="Paella mixta"></div><h3>Paella mixta</h3><p>&quot;La mejor paella mixta que he comido&quot;, dice una clienta.</p></div><div class="card fx"><div class="e-img"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RFVAtN5YsvXFR94mgCZuyyq99sheTgSsGN0FZdQdAUXCZJwRiGg43nwPW9XpmVXzZ3iT7PdwBYt5u7wAFYOd8A_jqIyvYwPZWrs7o3YgDBWsHBkUuj4I0mY-5kS1UzeX9P54K47JneW3PV=w900-h700-k-no" alt="Mariscos"></div><h3>Mariscos</h3><p>Gambas, almejas y marisco a la plancha.</p></div><div class="card fx"><div class="e-img"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9StbocKLg8zpLB8AbiaF1zIlc09lsTdA-mlEewZFt5vX9gFZ5YFE4ZXjgsL8IRRvBp3GL-TAj6ugIGnSjnKyTyRtsAcGP7l2ckVy4M7Ibe-t1f4LHaVoBHQW0YORNLvOHvCKjfd1sJVcw2q=w900-h700-k-no" alt="Brochetas y más"></div><h3>Brochetas y más</h3><p>Brochetas, croquetas, ensaladas y tarta de queso.</p></div></div><div class="e-ph"><strong>Aquí va texto</strong> · La carta completa con precios y la carta infantil.</div></div></section>
+<div class="cards" style="--cols:4"><div class="card fx"><div class="e-img"><img src="https://lh3.googleusercontent.com/grass-cs/AABkmLcOeXXYRm4-8Jcwg88M3DRzVSXR4L3kxeaZbcvaw7fB4gSov55Bg4TTh7rnbw32BkAzzaYneyg6CglFd0oqrzt50Lg4cryvPqJUD8p68a5jGWvN4h52DX0shUK8XkssvID9DUcXNgUWOIfd=w900-h700-k-no" alt="Carnes a la brasa"></div><h3>Carnes a la brasa</h3><p>Solomillo, paletilla de cordero y carnes de calidad al punto.</p></div><div class="card fx"><div class="e-img"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S1JILh63ArZdC9VBA0okzrelFqTlZvyGKJ1Z9lmu1hGHudhIaf9aHZXJ8wRF2_YNxvMMA1R_YC-NnIdqEv24dI4Gz9sXarS9x90j41BVTjklXU6WB-dhf1IEyGehZKNVhSNzPmHufvJXcP=w900-h700-k-no" alt="Paella mixta"></div><h3>Paella mixta</h3><p>&quot;La mejor paella mixta que he comido&quot;, dice una clienta.</p></div><div class="card fx"><div class="e-img"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RFVAtN5YsvXFR94mgCZuyyq99sheTgSsGN0FZdQdAUXCZJwRiGg43nwPW9XpmVXzZ3iT7PdwBYt5u7wAFYOd8A_jqIyvYwPZWrs7o3YgDBWsHBkUuj4I0mY-5kS1UzeX9P54K47JneW3PV=w900-h700-k-no" alt="Mariscos"></div><h3>Mariscos</h3><p>Gambas, almejas y marisco a la plancha.</p></div><div class="card fx"><div class="e-img"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9StbocKLg8zpLB8AbiaF1zIlc09lsTdA-mlEewZFt5vX9gFZ5YFE4ZXjgsL8IRRvBp3GL-TAj6ugIGnSjnKyTyRtsAcGP7l2ckVy4M7Ibe-t1f4LHaVoBHQW0YORNLvOHvCKjfd1sJVcw2q=w900-h700-k-no" alt="Brochetas y más"></div><h3>Brochetas y más</h3><p>Brochetas, croquetas, ensaladas y tarta de queso.</p></div></div></div></section>
 <section class="e-con" id="fotos"><div class="e-in"><div class="head fx"><div><span class="e-label">Fotos</span><h2>Royal Grill</h2></div></div>
 <div class="gal fx"><div class="e-img w2 h2"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S_Hm1AySY1LWWp6ovbMg3PbyZzDHwoetXHNVg2cKIuN_Ux1G19uTyp9wsG4yu4W8ZA77mCE0WVTcSCuJGMe4_osuSVWAg80ArySaTuEarjnIqeRw-EKcQz9FRYrOK0GVH10uUkMlQtRtP8=w1000-h800-k-no" alt="" loading="lazy"></div><div class="e-img "><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Qij9VLJ1N1FL9JoKupR-XZE-ppMYOwAgi9P3uCeix8gLb9kDqb2DeUvyue1N5aIxKZCODJDl2AHe3qIefAFQJpGi93OZZH6IR9w7x68uE8sJpWqdP5dTk5DZFOVVipW0Q5Lu0mbA=w1000-h800-k-no" alt="" loading="lazy"></div><div class="e-img "><img src="https://lh3.googleusercontent.com/grass-cs/AABkmLfRTaBrWTkd1-2Q312r-faCD8UGCR-0t1NjhzovbjMXMvATLkDsg1QILIoyTTeuH5VWxdY_mPUechTBI1wO-lTMcKa3-w7mC2n0nRatSZOPMquX_Oki-sztKy0Vo_mImftr1GdsDIORVKJn=w1000-h800-k-no" alt="" loading="lazy"></div><div class="e-img "><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QcBiMYYWsFZC0Dj2zRgfiT9SsuZxHrz5QSCo2dZs85jD_TDshql6zb8a04QM51m6hQ4AN6-hRoeV3IVm4fmt2myT8-GT3hEw8xvMH__g-dUCMF5T49kQSHw8CwaqV-oPOMX6HLUw=w1000-h800-k-no" alt="" loading="lazy"></div><div class="e-img "><img src="https://lh3.googleusercontent.com/grass-cs/AABkmLejYdFTJI0i3Hro2q46dhvI4WUXcxeGVCet7406SlvfrpSZ--kl_MMWgESbVSqd8ZN5I-8mEoStg8DxEsw2NNjIvdUfxS7xwtmDtnQhM5F_xwFAbm6QEDLI8sWlOLJ0t3XZvFx0b6PAmz-G=w1000-h800-k-no" alt="" loading="lazy"></div></div></div></section>
 <section class="e-con e-dark" id="opiniones"><div class="e-in">
@@ -153,4 +244,5 @@ h3{font-size:20px;margin-bottom:8px}
 <script>
 (function(){document.documentElement.classList.add('js');var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.12});document.querySelectorAll('.fx').forEach(function(el){io.observe(el)})})();
 </script>
+<a class="wa-float" href="https://wa.me/34673616246?text=Hola%2C%20quer%C3%ADa%20reservar%20mesa%20en%20Royal%20Grill." target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.1 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.3.1.2.1.7-.1 1.3z"/></svg></a>
 </body></html>
